@@ -1,9 +1,4 @@
 # 👋 ¡Hola, soy Lucas Chacón!
-
-🎯 *Web Developer con vocación técnica y pasión por la mejora continua.*
-
-![Web Developer Banner](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
-
 ---
 
 ## 🧑‍💻 Sobre mí
@@ -50,22 +45,15 @@ Me destaco por:
 - 🔄 Agile / Scrum
 - 🔐 JWT / Seguridad Web
 - 🧩 APIs RESTful
-- 📂 GitHub / GitLab / CI-CD
+- 📂 GitHub / GitLab
 - ☁️ AWS / Docker
 - 🌍 Inglés B2 (fluido en entorno laboral)
 
 ---
 
-## 🚀 Proyectos Personales
-
-📌 *(En construcción, ¡pronto los mostraré aquí!)*  
-Puedes seguir mis repos para ver ejemplos de código, soluciones creativas y prácticas de desarrollo moderno.
-
----
-
 ## 📫 Contacto
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil-aqui)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-chacon-/)  
 [📧 l.chaconlanga3@gmail.com](mailto:l.chaconlanga3@gmail.com)
 
 ---
