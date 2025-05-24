@@ -1,65 +1,73 @@
-# 👾 GitHub: El Hogar del Código Colaborativo
+# 👋 ¡Hola, soy Lucas Chacón!
 
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/Octocat.png)
+🎯 *Web Developer con vocación técnica y pasión por la mejora continua.*
 
-> _“Donde millones de desarrolladores crean, colaboran y comparten sus ideas con el mundo.”_
-
----
-
-## 🧬 Nacido en: **2008**
-Creado por **Tom Preston-Werner**, **Chris Wanstrath**, **PJ Hyett** y **Scott Chacon** 🧑‍💻  
-Basado en **Git**, la herramienta de control de versiones creada por Linus Torvalds 🐧
+![Web Developer Banner](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
 
 ---
 
-## 🌎 Hoy en día...
+## 🧑‍💻 Sobre mí
 
-- 🚀 +100M de desarrolladores
-- 📦 +300M de repositorios
-- 🏢 Parte de [Microsoft](https://www.microsoft.com) desde 2018
+Técnico en Desarrollo de Aplicaciones Web con experiencia en entornos reales de trabajo.  
+Me destaco por:
 
----
+- Comprender rápidamente las necesidades del entorno.
+- Adaptarme con facilidad a nuevos retos.
+- Aportar soluciones funcionales, claras y mantenibles.
 
-## 🔧 Funciones Clave
-
-| Función         | Descripción                                         |
-|----------------|-----------------------------------------------------|
-| 🧵 Pull Requests | Para colaborar en cambios de código                |
-| 🐞 Issues        | Para reportar errores o sugerir mejoras             |
-| ⚙️ Actions       | Para automatizar flujos CI/CD                      |
-| 🤖 Copilot       | Tu asistente de codificación con IA                |
+> ✨ Valoro el trabajo bien hecho, el aprendizaje constante y la colaboración en equipo.
 
 ---
 
-## 🧠 GitHub Copilot
+## 🧠 Formación
 
-![Copilot](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGV0eTlvNzAwam01cmlrbnhia3d2N2xqMnNlYmNqZW14M3JkNzFqMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fAnEC88LccN7aQoxuR/giphy.gif)
+🎓 **Técnico en Desarrollo de Aplicaciones Web (DAW)**  
+*IES Francisco de Goya (2023–2025)*
 
-> 💡 _IA entrenada en miles de millones de líneas de código para ayudarte a programar más rápido y mejor._
-
----
-
-## 📜 Licencia y Código Abierto
-
-GitHub apoya y aloja millones de proyectos de **código abierto** con licencias como MIT, GPL, Apache, etc.  
-📚 ¡Contribuir nunca fue tan fácil!
+- Backend: Java (Spring Boot), MySQL, MongoDB
+- Frontend: HTML, CSS (Bootstrap, Tailwind, Sass), JavaScript (React)
+- DevOps: Apache2, Nginx, AWS, Docker, Linux
+- Control de versiones: Git, GitHub
 
 ---
 
-## ⭐ ¿Sabías qué...?
+## 🌟 Skills Técnicos
 
-- El primer repo fue [`grit`](https://github.com/mojombo/grit), una librería Ruby para Git.
-- El logo de GitHub se llama **Octocat** 🐙.
-- GitHub fue creado en un **fin de semana** como experimento.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
 ---
 
-## 💬 Encuéntrame en la web
+## 🛠 Herramientas & Metodologías
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com)  
-[![Copilot](https://img.shields.io/badge/Copilot-00B4AB?style=for-the-badge&logo=githubcopilot&logoColor=white)](https://github.com/features/copilot)
+- 🔄 Agile / Scrum
+- 🔐 JWT / Seguridad Web
+- 🧩 APIs RESTful
+- 📂 GitHub / GitLab / CI-CD
+- ☁️ AWS / Docker
+- 🌍 Inglés B2 (fluido en entorno laboral)
 
 ---
 
-🖤 _Código con amor, colabora con pasión. GitHub._
+## 🚀 Proyectos Personales
 
+📌 *(En construcción, ¡pronto los mostraré aquí!)*  
+Puedes seguir mis repos para ver ejemplos de código, soluciones creativas y prácticas de desarrollo moderno.
+
+---
+
+## 📫 Contacto
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil-aqui)  
+[📧 l.chaconlanga3@gmail.com](mailto:l.chaconlanga3@gmail.com)
+
+---
+
+> “Código limpio, mente clara y equipo unido.” – Lucas Chacón
