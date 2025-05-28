@@ -7,24 +7,6 @@ I stand out for:
 ✔️ Delivering clean, maintainable, and scalable solutions.  
 ✨ I value high-quality code, continuous learning, and teamwork.
 
-> "Driven by curiosity, guided by code, and focused on impact."
-
----
-
-## 🧠 Languages & Technologies
-
-- ☕ **Java (Spring Boot)** – Secure and scalable backend development  
-- 🌐 **HTML / CSS (Bootstrap, Tailwind, Sass)** – Modern and responsive UI design  
-- ⚛️ **React** – Interactive and dynamic front-end experiences  
-- 🛢️ **MySQL / MongoDB** – Relational and non-relational databases  
-- 🐳 **Docker / Linux / AWS / Google Cloud** – Cloud deployment & DevOps  
-- 🔐 **JWT & Web Security** – Authentication and secure web practices  
-- 🛠️ **Git / GitHub / GitLab** – Version control and Agile workflows  
-- 🎨 **Figma / Canva** – UI/UX prototyping and design  
-- ⚙️ **Apache / Nginx / Vite / NPM / Thymeleaf** – Supporting tools & technologies  
-
----
-
 ## 🎓 Education
 
 📘 **Web Application Development Technician (DAW)**  
