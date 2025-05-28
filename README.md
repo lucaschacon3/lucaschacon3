@@ -1,61 +1,82 @@
-# 👋 ¡Hola, soy Lucas Chacón!
----
+## Hi 👋, I’m Lucas Chacón
 
-## 🧑‍💻 Sobre mí
+🧑‍💻 Web Application Development Technician with real-world experience in building dynamic and functional applications.  
+I stand out for:  
+✔️ Quickly understanding project and business needs.  
+✔️ Adapting easily to new challenges and technologies.  
+✔️ Delivering clean, maintainable, and scalable solutions.  
+✨ I value high-quality code, continuous learning, and teamwork.
 
-Técnico en Desarrollo de Aplicaciones Web con experiencia en entornos reales de trabajo.  
-Me destaco por:
-
-- Comprender rápidamente las necesidades del entorno.
-- Adaptarme con facilidad a nuevos retos.
-- Aportar soluciones funcionales, claras y mantenibles.
-
-> ✨ Valoro el trabajo bien hecho, el aprendizaje constante y la colaboración en equipo.
+> "Driven by curiosity, guided by code, and focused on impact."
 
 ---
 
-## 🧠 Formación
+## 🧠 Languages & Technologies
 
-🎓 **Técnico en Desarrollo de Aplicaciones Web (DAW)**  
-*IES Francisco de Goya (2023–2025)*
-
-- Backend: Java (Spring Boot), MySQL, MongoDB
-- Frontend: HTML, CSS (Bootstrap, Tailwind, Sass), JavaScript (React)
-- DevOps: Apache2, Nginx, AWS, Docker, Linux
-- Control de versiones: Git, GitHub
-
----
-
-## 🌟 Skills Técnicos
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+- ☕ **Java (Spring Boot)** – Secure and scalable backend development  
+- 🌐 **HTML / CSS (Bootstrap, Tailwind, Sass)** – Modern and responsive UI design  
+- ⚛️ **React** – Interactive and dynamic front-end experiences  
+- 🛢️ **MySQL / MongoDB** – Relational and non-relational databases  
+- 🐳 **Docker / Linux / AWS / Google Cloud** – Cloud deployment & DevOps  
+- 🔐 **JWT & Web Security** – Authentication and secure web practices  
+- 🛠️ **Git / GitHub / GitLab** – Version control and Agile workflows  
+- 🎨 **Figma / Canva** – UI/UX prototyping and design  
+- ⚙️ **Apache / Nginx / Vite / NPM / Thymeleaf** – Supporting tools & technologies  
 
 ---
 
-## 🛠 Herramientas & Metodologías
+## 🎓 Education
 
-- 🔄 Agile / Scrum
-- 🔐 JWT / Seguridad Web
-- 🧩 APIs RESTful
-- 📂 GitHub / GitLab
-- ☁️ AWS / Docker
-- 🌍 Inglés B2 (fluido en entorno laboral)
+📘 **Web Application Development Technician (DAW)**  
+*IES Francisco de Goya – 2023–2025*
 
 ---
 
-## 📫 Contacto
+## 🌐 Connect with Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-chacon-/)  
-[📧 l.chaconlanga3@gmail.com](mailto:l.chaconlanga3@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-chacon-/)  
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:l.chaconlanga3@gmail.com)
 
 ---
 
-> “Código limpio, mente clara y equipo unido.” – Lucas Chacón
+## 💻 Tech Stack
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-hotpink?style=for-the-badge&logo=Sass&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005C0F?style=for-the-badge&logo=thymeleaf&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4ea94b?style=for-the-badge&logo=mongodb&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Apache](https://img.shields.io/badge/Apache-D42029?style=for-the-badge&logo=apache&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)
+
+---
+
+## 📊 GitHub Stats
+
+![](https://github-readme-stats.vercel.app/api?username=lucaschacon3&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true)  
+![](https://nirzak-streak-stats.vercel.app/?user=lucaschacon3&theme=tokyonight&hide_border=false)  
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=lucaschacon3&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+---
+
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
