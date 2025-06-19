@@ -1,15 +1,15 @@
 # Hi 👋, I’m Lucas Chacón
 
 I’m a Web Application Development Technician with hands-on experience building reliable, scalable, and user-friendly applications. I thrive in fast-paced environments where understanding business needs quickly and adapting to evolving technologies are key.  
-Currently, I am expanding my expertise by Artificial Intelligence and Big Data, aiming to integrate intelligent systems into future projects and enhance data-driven decision making. I’m passionate about writing clean, maintainable code and contributing to collaborative teams that drive innovation.
+I am expanding my expertise by Artificial Intelligence and Big Data, aiming to integrate intelligent systems into future projects and enhance data-driven decision making. I’m passionate about writing clean, maintainable code and contributing to collaborative teams that drive innovation.
 
 ## 🎓 Education & Professional Growth
 
-**Web Application Development Technician (DAW)**  
+### Web Application Development Technician (DAW)
 IES Francisco de Goya – 2023–2025  
 Completed comprehensive training in web development including backend, frontend, databases, deployment, and security best practices.
 
-**Master’s in Artificial Intelligence and Big Data**  
+### Master’s in Artificial Intelligence and Big Data
 Linkia FP – 2025–2026  
 Focused on machine learning, deep learning, automation, big data architectures, and the integration of AI in business processes to optimize operations and decision making.
 
