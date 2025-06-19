@@ -58,5 +58,3 @@ Focused on machine learning, deep learning, automation, big data architectures, 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-chacon-/) [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:l.chaconlanga3@gmail.com)
 
----
-
