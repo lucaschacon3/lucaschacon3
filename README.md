@@ -1,16 +1,17 @@
-## Hi 👋, I’m Lucas Chacón
+# Hi 👋, I’m Lucas Chacón
 
-🧑‍💻 Web Application Development Technician with real-world experience in building dynamic and functional applications.  
-I stand out for:  
-✔️ Quickly understanding project and business needs.  
-✔️ Adapting easily to new challenges and technologies.  
-✔️ Delivering clean, maintainable, and scalable solutions.  
-✨ I value high-quality code, continuous learning, and teamwork.
+I’m a Web Application Development Technician with hands-on experience building reliable, scalable, and user-friendly applications. I thrive in fast-paced environments where understanding business needs quickly and adapting to evolving technologies are key.  
+Currently, I am expanding my expertise by Artificial Intelligence and Big Data, aiming to integrate intelligent systems into future projects and enhance data-driven decision making. I’m passionate about writing clean, maintainable code and contributing to collaborative teams that drive innovation.
 
-## 🎓 Education
+## 🎓 Education & Professional Growth
 
-📘 **Web Application Development Technician (DAW)**  
-*IES Francisco de Goya – 2023–2025*
+**Web Application Development Technician (DAW)**  
+IES Francisco de Goya – 2023–2025  
+Completed comprehensive training in web development including backend, frontend, databases, deployment, and security best practices.
+
+**Master’s in Artificial Intelligence and Big Data**  
+Linkia FP – 2025–2026  
+Focused on machine learning, deep learning, automation, big data architectures, and the integration of AI in business processes to optimize operations and decision making.
 
 ---
 
@@ -41,6 +42,7 @@ I stand out for:
 ![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)
+
 
 ---
 
