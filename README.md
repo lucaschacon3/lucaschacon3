@@ -1,21 +1,25 @@
-# Hi 👋, I’m Lucas Chacón
+# Hola 👋, Soy Lucas Chacón
 
-I’m a Web Application Development Technician with hands-on experience building reliable, scalable, and user-friendly applications. I thrive in fast-paced environments where understanding business needs quickly and adapting to evolving technologies are key.  
-I am expanding my expertise by Artificial Intelligence and Big Data, aiming to integrate intelligent systems into future projects and enhance data-driven decision making. I’m passionate about writing clean, maintainable code and contributing to collaborative teams that drive innovation.
+Soy Técnico Superior en Desarrollo de Aplicaciones Web con experiencia práctica en la creación de aplicaciones fiables, escalables y fáciles de usar. Me desenvuelvo con eficacia en entornos dinámicos, donde comprender rápidamente las necesidades del negocio y adaptarme a tecnologías en evolución es clave.
+Actualmente estoy ampliando mi experiencia en Inteligencia Artificial y Big Data, con el objetivo de integrar sistemas inteligentes en proyectos futuros y mejorar la toma de decisiones basada en datos. Me apasiona escribir código limpio y mantenible, y contribuir en equipos colaborativos que impulsan la innovación.
 
-## 🎓 Education & Professional Growth
-
-### Web Application Development Technician (DAW)
-IES Francisco de Goya – 2023–2025  
-Completed comprehensive training in web development including backend, frontend, databases, deployment, and security best practices.
+## 🎓 Formación Académica y Desarrollo Profesional
 
 ### Master’s in Artificial Intelligence and Big Data
 Linkia FP – 2025–2026  
 Focused on machine learning, deep learning, automation, big data architectures, and the integration of AI in business processes to optimize operations and decision making.
 
+### Técnico Superior en Desarrollo de Aplicaciones Web (DAW)
+IES Francisco de Goya – 2023–2025
+Formación completa en desarrollo web, incluyendo backend, frontend, bases de datos, despliegue y buenas prácticas de seguridad.
+
+### Grado en Ingeniería Telemática (incompleto)
+Universidad de Alcalá – 2021
+Estudios enfocados en redes, telecomunicaciones, sistemas distribuidos y gestión de datos.
+
 ---
 
-## 💻 Tech Stack
+## 💻 Stack Tecnológico
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
