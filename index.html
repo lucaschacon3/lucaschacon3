@@ -1206,91 +1206,159 @@
               <h3 class="text-2xl font-semibold text-primary-300 mb-6">
                 Send a Message
               </h3>
-              <form class="space-y-6" action="mailto:tuemail@ejemplo.com" method="POST" enctype="text/plain">
-                <div class="grid md:grid-cols-2 gap-6">
+
+                <form id="contact-form" class="space-y-6">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label
+                        for="firstName"
+                        class="block text-sm font-medium text-gray-300 mb-2"
+                        >First Name</label
+                      >
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="Your first name"
+                        required
+                        autocomplete="given-name"
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="lastName"
+                        class="block text-sm font-medium text-gray-300 mb-2"
+                        >Last Name</label
+                      >
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Your last name"
+                        required
+                        autocomplete="family-name"
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
+                      />
+                    </div>
+                  </div>
+
                   <div>
                     <label
-                      for="firstName"
+                      for="email"
                       class="block text-sm font-medium text-gray-300 mb-2"
-                      >First Name</label
+                      >Email</label
                     >
                     <input
-                      type="text"
-                      id="firstName"
-                      placeholder="Your first name"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="your.email@example.com"
+                      required
+                      autocomplete="email"
+                      inputmode="email"
                       class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
                     />
                   </div>
+
                   <div>
                     <label
-                      for="lastName"
+                      for="subject"
                       class="block text-sm font-medium text-gray-300 mb-2"
-                      >Last Name</label
+                      >Subject</label
                     >
                     <input
                       type="text"
-                      id="lastName"
-                      placeholder="Your last name"
+                      id="subject"
+                      name="subject"
+                      placeholder="What's this about?"
+                      required
                       class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
                     />
                   </div>
-                </div>
 
-                <div>
-                  <label
-                    for="email"
-                    class="block text-sm font-medium text-gray-300 mb-2"
-                    >Email</label
+                  <div>
+                    <label
+                      for="message"
+                      class="block text-sm font-medium text-gray-300 mb-2"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                      placeholder="Tell me about your project or just say hello!"
+                      class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-full px-6 py-3 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors text-white font-medium"
                   >
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="your.email@example.com"
-                    class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
-                  />
-                </div>
+                    Send Message
+                  </button>
 
-                <div>
-                  <label
-                    for="subject"
-                    class="block text-sm font-medium text-gray-300 mb-2"
-                    >Subject</label
-                  >
-                  <input
-                    type="text"
-                    id="subject"
-                    placeholder="What's this about?"
-                    class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
-                  />
-                </div>
+                  <!-- Fallback si JS está deshabilitado -->
+                  <noscript>
+                    <p class="text-sm text-gray-400 mt-2">
+                      JS deshabilitado. Envía un email a
+                      <a
+                        class="underline text-primary-300"
+                        href="mailto:l.chaconlanga3@gmail.com?subject=Contacto%20desde%20tu%20web"
+                      >
+                        l.chaconlanga3@gmail.com </a
+                      >.
+                    </p>
+                  </noscript>
+                </form>
 
-                <div>
-                  <label
-                    for="message"
-                    class="block text-sm font-medium text-gray-300 mb-2"
-                    >Message</label
-                  >
-                  <textarea
-                    id="message"
-                    rows="4"
-                    placeholder="Tell me about your project or just say hello!"
-                    class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
-                  ></textarea>
-                </div>
+              <script>
+                (function () {
+                  const form = document.getElementById("contact-form");
+                  form.addEventListener("submit", function (e) {
+                    e.preventDefault();
 
-                <button
-                  type="submit"
-                  class="w-full px-6 py-3 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors text-white font-medium"
-                >
-                  Send Message
-                </button>
-              </form>
+                    const firstName = document
+                      .getElementById("firstName")
+                      .value.trim();
+                    const lastName = document
+                      .getElementById("lastName")
+                      .value.trim();
+                    const email = document.getElementById("email").value.trim();
+                    const subject = document
+                      .getElementById("subject")
+                      .value.trim();
+                    const message = document
+                      .getElementById("message")
+                      .value.trim();
+
+                    // Construir body con saltos de línea
+                    const body = [
+                      `Name: ${firstName} ${lastName}`,
+                      `Email: ${email}`,
+                      "",
+                      "Message:",
+                      message,
+                    ].join("\n");
+
+                    const mailto = `mailto:l.chaconlanga3@gmail.com?subject=${encodeURIComponent(
+                      subject
+                    )}&body=${encodeURIComponent(body)}`;
+
+                    // Abrir cliente de correo
+                    window.location.href = mailto;
+                  });
+                })();
+              </script>
             </div>
           </div>
         </div>
       </section>
     </main>
   </body>
+
   <script>
     const canvas = document.getElementById("stars");
     const ctx = canvas.getContext("2d");
