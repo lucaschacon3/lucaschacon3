@@ -1,25 +1,28 @@
-# Hola 👋, Soy Lucas Chacón
+# Hi 👋, I'm Lucas Chacón
 
-Soy Técnico Superior en Desarrollo de Aplicaciones Web con experiencia práctica en la creación de aplicaciones fiables, escalables y fáciles de usar. Me desenvuelvo con eficacia en entornos dinámicos, donde comprender rápidamente las necesidades del negocio y adaptarme a tecnologías en evolución es clave.
-Actualmente estoy ampliando mi experiencia en Inteligencia Artificial y Big Data, con el objetivo de integrar sistemas inteligentes en proyectos futuros y mejorar la toma de decisiones basada en datos. Me apasiona escribir código limpio y mantenible, y contribuir en equipos colaborativos que impulsan la innovación.
+I am a **Higher Technician in Web Application Development (DAW)** with hands-on experience creating reliable, scalable, and user-friendly applications. I thrive in dynamic environments where quickly understanding business needs and adapting to evolving technologies is key.  
 
-## 🎓 Formación Académica y Desarrollo Profesional
-
-### Master’s in Artificial Intelligence and Big Data
-Linkia FP – 2025–2026  
-Focused on machine learning, deep learning, automation, big data architectures, and the integration of AI in business processes to optimize operations and decision making.
-
-### Técnico Superior en Desarrollo de Aplicaciones Web (DAW)
-IES Francisco de Goya – 2023–2025
-Formación completa en desarrollo web, incluyendo backend, frontend, bases de datos, despliegue y buenas prácticas de seguridad.
-
-### Grado en Ingeniería Telemática (incompleto)
-Universidad de Alcalá – 2021
-Estudios enfocados en redes, telecomunicaciones, sistemas distribuidos y gestión de datos.
+I am currently expanding my expertise in **Artificial Intelligence and Big Data**, aiming to integrate intelligent systems into future projects and enhance data-driven decision making. I’m passionate about writing clean, maintainable code and contributing to collaborative teams that drive innovation.  
 
 ---
 
-## 💻 Stack Tecnológico
+## 🎓 Education & Professional Development  
+
+### Master’s in Artificial Intelligence and Big Data  
+**Linkia FP — 2025–2026 (ongoing)**  
+Focused on machine learning, deep learning, automation, big data architectures, and integrating AI into business processes to optimize operations and decision making.  
+
+### Higher Technician in Web Application Development (DAW)  
+**IES Francisco de Goya — 2023–2025**  
+Comprehensive training in web development, including backend, frontend, databases, deployment, and security best practices.  
+
+### Degree in Telematics Engineering (incomplete)  
+**University of Alcalá (UAH) — 2021**  
+Studies focused on networks, telecommunications, distributed systems, and data management.  
+
+---
+
+## 💻 Tech Stack  
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
@@ -47,18 +50,19 @@ Estudios enfocados en redes, telecomunicaciones, sistemas distribuidos y gestió
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)
 
-
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Stats  
 
 ![](https://github-readme-stats.vercel.app/api?username=lucaschacon3&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true)  
 ![](https://nirzak-streak-stats.vercel.app/?user=lucaschacon3&theme=tokyonight&hide_border=false)  
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=lucaschacon3&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=lucaschacon3&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact)  
 
 ---
 
-## 🌐 Connect with Me
+## 🌐 Connect with Me  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-chacon-/) [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:l.chaconlanga3@gmail.com)
-
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://lucaschacon.dev)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-chacon-/)  
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lucaschacon3)  
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:l.chaconlanga3@gmail.com)  

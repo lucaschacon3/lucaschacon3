@@ -5,124 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucas Chacon Portfolio</title>
     <link rel="icon" type="image/png" href="public/favicon.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: {
-                50: "#faf5ff",
-                100: "#f3e8ff",
-                200: "#e9d5ff",
-                300: "#d8b4fe",
-                400: "#c084fc",
-                500: "#a855f7",
-                600: "#9333ea",
-                700: "#7e22ce",
-                800: "#6b21a8",
-                900: "#581c87",
-              },
-              blue: {
-                300: "#93c5fd",
-                400: "#60a5fa",
-                500: "#3b82f6",
-                600: "#2563eb",
-                700: "#1d4ed8",
-              },
-              indigo: {
-                300: "#a5b4fc",
-                400: "#818cf8",
-                500: "#6366f1",
-                600: "#4f46e5",
-                700: "#4338ca",
-              },
-            },
-            animation: {
-              gradient: "gradient 8s linear infinite",
-              float: "float 3s ease-in-out infinite",
-              "pulse-slow": "pulse 4s ease-in-out infinite",
-            },
-            keyframes: {
-              gradient: {
-                "0%, 100%": {
-                  "background-size": "200% 200%",
-                  "background-position": "left center",
-                },
-                "50%": {
-                  "background-size": "200% 200%",
-                  "background-position": "right center",
-                },
-              },
-              float: {
-                "0%, 100%": { transform: "translateY(0)" },
-                "50%": { transform: "translateY(-10px)" },
-              },
-            },
-          },
-        },
-      };
-    </script>
-    <script>
-      function toggleMobileMenu() {
-        const menu = document.getElementById("mobile-menu");
-        const overlay = document.getElementById("mobile-overlay");
-        menu.classList.toggle("translate-x-full");
-        menu.classList.toggle("translate-x-0");
-        overlay.classList.toggle("hidden");
-      }
-    </script>
-    <style>
-      #stars {
-        position: fixed; /* siempre pegado al viewport */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1; /* queda detrás de todo */
-      }
-
-      .gradient-text {
-        background: linear-gradient(to right, #d8b4fe, #93c5fd, #818cf8);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 200% auto;
-        animation: gradient 8s linear infinite;
-      }
-      .hover-gradient {
-        background: linear-gradient(45deg, #7e22ce, #4f46e5, #2563eb);
-        background-size: 200% auto;
-        transition: all 0.5s ease;
-      }
-      .hover-gradient:hover {
-        background-position: right center;
-      }
-      .card-gradient {
-        background: linear-gradient(
-          135deg,
-          rgba(99, 102, 241, 0.1),
-          rgba(168, 85, 247, 0.1)
-        );
-        border: 1px solid rgba(99, 102, 241, 0.2);
-      }
-      .card-gradient:hover {
-        background: linear-gradient(
-          135deg,
-          rgba(99, 102, 241, 0.15),
-          rgba(168, 85, 247, 0.15)
-        );
-        border-color: rgba(99, 102, 241, 0.3);
-      }
-      .hover-lift {
-        transition: all 0.3s ease;
-      }
-      .hover-lift:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 10px 20px rgba(99, 102, 241, 0.1);
-      }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/sweet-alert.js"></script>
+    <script src="js/tailwind.js"></script>
+    <script src="js/tailwind-config.js"></script>
+    <script src="js/cv-download.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/contact-form.js" defer></script>
+    <script src="js/stars.js" defer></script>
   </head>
   <body class="bg-gray-900 text-gray-100">
     <canvas id="stars"></canvas>
@@ -281,6 +171,32 @@
             cutting-edge AI technologies. Passionate about creating exceptional
             user experiences and scalable applications.
           </h5>
+          <div class="flex items-center justify-center gap-6 mb-8">
+            <a
+              href="https://www.linkedin.com/in/lucas-chacon-/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary-400 hover:text-primary-300 transition-colors"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/lucaschacon3"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary-400 hover:text-primary-300 transition-colors"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </div>
 
           <!-- Botones -->
           <div class="flex justify-center gap-4 mb-8">
@@ -289,12 +205,12 @@
               class="px-6 py-3 hover-gradient text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20"
               >Get in touch</a
             >
-            <a
-              href="public/CV Lucas Chacon.pdf"
-              download
+            <button
+              id="download-cv"
               class="px-6 py-3 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg border border-accent-400/50 hover:border-accent-300 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent-500/20"
-              >Download CV</a
             >
+              Download CV
+            </button>
           </div>
 
           <!-- Social -->
@@ -865,6 +781,8 @@
                     EF SET Certificate
                     <a
                       href="https://cert.efset.org/es/ZRYjH6"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       class="px-3 py-1 bg-blue-500/20 text-blue-400 border-blue-500/30 rounded-full text-sm mb-3"
                       >Show credentials</a
                     ></span
@@ -962,11 +880,15 @@
             <div class="flex gap-4">
               <a
                 href="ufc-rivals.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="px-6 py-2 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors"
                 >View Project</a
               >
               <a
                 href="https://github.com/lucaschacon3/UFC-Rivals"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="px-6 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
                 >Source Code</a
               >
@@ -1036,12 +958,16 @@
 
             <div class="flex gap-4">
               <a
-                href="ufc-rivals.com"
+                href="wardrobe.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="px-6 py-2 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors"
                 >View Project</a
               >
               <a
-                href="https://github.com/lucaschacon3/UFC-Rivals"
+                href="https://github.com/lucaschacon3/wardrobe"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="px-6 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
                 >Source Code</a
               >
@@ -1061,6 +987,8 @@
             </p>
             <a
               href="https://github.com/lucaschacon3?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
               class="inline-block px-6 py-2 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors"
               >View All on GitHub</a
             >
@@ -1172,6 +1100,8 @@
                 <div class="flex space-x-4">
                   <a
                     href="https://www.linkedin.com/in/lucas-chacon-/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="text-primary-400 hover:text-primary-300 transition-colors"
                   >
                     <svg
@@ -1186,6 +1116,8 @@
                   </a>
                   <a
                     href="https://github.com/lucaschacon3"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="text-primary-400 hover:text-primary-300 transition-colors"
                   >
                     <svg
@@ -1207,214 +1139,116 @@
                 Send a Message
               </h3>
 
-                <form id="contact-form" class="space-y-6">
-                  <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label
-                        for="firstName"
-                        class="block text-sm font-medium text-gray-300 mb-2"
-                        >First Name</label
-                      >
-                      <input
-                        type="text"
-                        id="firstName"
-                        name="firstName"
-                        placeholder="Your first name"
-                        required
-                        autocomplete="given-name"
-                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="lastName"
-                        class="block text-sm font-medium text-gray-300 mb-2"
-                        >Last Name</label
-                      >
-                      <input
-                        type="text"
-                        id="lastName"
-                        name="lastName"
-                        placeholder="Your last name"
-                        required
-                        autocomplete="family-name"
-                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
-                      />
-                    </div>
-                  </div>
-
+              <form id="contact-form" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
                   <div>
                     <label
-                      for="email"
+                      for="firstName"
                       class="block text-sm font-medium text-gray-300 mb-2"
-                      >Email</label
-                    >
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="your.email@example.com"
-                      required
-                      autocomplete="email"
-                      inputmode="email"
-                      class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      for="subject"
-                      class="block text-sm font-medium text-gray-300 mb-2"
-                      >Subject</label
+                      >First Name</label
                     >
                     <input
                       type="text"
-                      id="subject"
-                      name="subject"
-                      placeholder="What's this about?"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="Your first name"
                       required
+                      autocomplete="given-name"
                       class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
                     />
                   </div>
-
                   <div>
                     <label
-                      for="message"
+                      for="lastName"
                       class="block text-sm font-medium text-gray-300 mb-2"
-                      >Message</label
+                      >Last Name</label
                     >
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="4"
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Your last name"
                       required
-                      placeholder="Tell me about your project or just say hello!"
+                      autocomplete="family-name"
                       class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
-                    ></textarea>
+                    />
                   </div>
+                </div>
 
-                  <button
-                    type="submit"
-                    class="w-full px-6 py-3 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors text-white font-medium"
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-300 mb-2"
+                    >Email</label
                   >
-                    Send Message
-                  </button>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your.email@example.com"
+                    required
+                    autocomplete="email"
+                    inputmode="email"
+                    class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
+                  />
+                </div>
 
-                  <!-- Fallback si JS está deshabilitado -->
-                  <noscript>
-                    <p class="text-sm text-gray-400 mt-2">
-                      JS deshabilitado. Envía un email a
-                      <a
-                        class="underline text-primary-300"
-                        href="mailto:l.chaconlanga3@gmail.com?subject=Contacto%20desde%20tu%20web"
-                      >
-                        l.chaconlanga3@gmail.com </a
-                      >.
-                    </p>
-                  </noscript>
-                </form>
+                <div>
+                  <label
+                    for="subject"
+                    class="block text-sm font-medium text-gray-300 mb-2"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="What's this about?"
+                    required
+                    class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
+                  />
+                </div>
 
-              <script>
-                (function () {
-                  const form = document.getElementById("contact-form");
-                  form.addEventListener("submit", function (e) {
-                    e.preventDefault();
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-300 mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    placeholder="Tell me about your project or just say hello!"
+                    class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
+                  ></textarea>
+                </div>
 
-                    const firstName = document
-                      .getElementById("firstName")
-                      .value.trim();
-                    const lastName = document
-                      .getElementById("lastName")
-                      .value.trim();
-                    const email = document.getElementById("email").value.trim();
-                    const subject = document
-                      .getElementById("subject")
-                      .value.trim();
-                    const message = document
-                      .getElementById("message")
-                      .value.trim();
+                <button
+                  type="submit"
+                  class="w-full px-6 py-3 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors text-white font-medium"
+                >
+                  Send Message
+                </button>
 
-                    // Construir body con saltos de línea
-                    const body = [
-                      `Name: ${firstName} ${lastName}`,
-                      `Email: ${email}`,
-                      "",
-                      "Message:",
-                      message,
-                    ].join("\n");
-
-                    const mailto = `mailto:l.chaconlanga3@gmail.com?subject=${encodeURIComponent(
-                      subject
-                    )}&body=${encodeURIComponent(body)}`;
-
-                    // Abrir cliente de correo
-                    window.location.href = mailto;
-                  });
-                })();
-              </script>
+                <!-- Fallback si JS está deshabilitado -->
+                <noscript>
+                  <p class="text-sm text-gray-400 mt-2">
+                    JS deshabilitado. Envía un email a
+                    <a
+                      class="underline text-primary-300"
+                      href="mailto:l.chaconlanga3@gmail.com?subject=Contacto%20desde%20tu%20web"
+                    >
+                      l.chaconlanga3@gmail.com </a
+                    >.
+                  </p>
+                </noscript>
+              </form>
             </div>
           </div>
         </div>
       </section>
     </main>
   </body>
-
-  <script>
-    const canvas = document.getElementById("stars");
-    const ctx = canvas.getContext("2d");
-    let stars = [];
-
-    function resize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-    window.addEventListener("resize", resize);
-    resize();
-
-    function createStars() {
-      stars = [];
-      for (let i = 0; i < 400; i++) {
-        // 🔹 más estrellas (antes 150)
-        stars.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          radius: Math.random() * 1.8, // un poco más grandes
-          alpha: Math.random(),
-          alphaSpeed: 0.01 + Math.random() * 0.02, // parpadeo más rápido
-          vx: (Math.random() - 0.5) * 0.6, // 🔹 más velocidad
-          vy: (Math.random() - 0.5) * 0.6,
-        });
-      }
-    }
-
-    function drawStars() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      stars.forEach((star) => {
-        // Parpadeo
-        star.alpha += star.alphaSpeed;
-        if (star.alpha > 1 || star.alpha < 0)
-          star.alphaSpeed = -star.alphaSpeed;
-
-        // Movimiento
-        star.x += star.vx;
-        star.y += star.vy;
-
-        // Reaparecer en bordes
-        if (star.x < 0) star.x = canvas.width;
-        if (star.x > canvas.width) star.x = 0;
-        if (star.y < 0) star.y = canvas.height;
-        if (star.y > canvas.height) star.y = 0;
-
-        // Dibujar
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${Math.abs(star.alpha)})`;
-        ctx.fill();
-      });
-      requestAnimationFrame(drawStars);
-    }
-
-    createStars();
-    drawStars();
-  </script>
 </html>
