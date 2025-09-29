@@ -1,5 +1,11 @@
 # Hi 👋, I'm Lucas Chacón
 
+<p align="center">
+  <a href="https://lucaschacon.dev">
+    <img src="https://img.shields.io/badge/🚀%20Visit%20my%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
+</p>
+
 I am a **Higher Technician in Web Application Development (DAW)** with hands-on experience creating reliable, scalable, and user-friendly applications. I thrive in dynamic environments where quickly understanding business needs and adapting to evolving technologies is key.  
 
 I am currently expanding my expertise in **Artificial Intelligence and Big Data**, aiming to integrate intelligent systems into future projects and enhance data-driven decision making. I’m passionate about writing clean, maintainable code and contributing to collaborative teams that drive innovation.  
