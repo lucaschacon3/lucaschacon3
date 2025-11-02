@@ -6,16 +6,16 @@
   </a>
 </p>
 
-I am a **Higher Technician in Web Application Development (DAW)** with hands-on experience creating reliable, scalable, and user-friendly applications. I thrive in dynamic environments where quickly understanding business needs and adapting to evolving technologies is key.  
+I am a Higher Technician in **Web Application Development (DAW)** with hands-on experience building reliable, scalable, and user-centric applications. I thrive in dynamic environments where understanding business needs and adapting to evolving technologies are key to delivering impact.
 
-I am currently expanding my expertise in **Artificial Intelligence and Big Data**, aiming to integrate intelligent systems into future projects and enhance data-driven decision making. I’m passionate about writing clean, maintainable code and contributing to collaborative teams that drive innovation.  
+With a strong foundation in **Artificial Intelligence and Big Data**, I focus on integrating intelligent systems and data-driven automation into modern software solutions. Passionate about clean, maintainable code and collaborative development, I aim to contribute to teams that drive innovation and continuous improvement.
 
 ---
 
 ## 🎓 Education & Professional Development  
 
 ### Master’s in Artificial Intelligence and Big Data  
-**Linkia FP — 2025–2026 (ongoing)**  
+**Linkia FP — 2025–2026**  
 Focused on machine learning, deep learning, automation, big data architectures, and integrating AI into business processes to optimize operations and decision making.  
 
 ### Higher Technician in Web Application Development (DAW)  
