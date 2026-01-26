@@ -4,7 +4,7 @@
   <a href="https://lucaschacon.dev">
     <img src="https://img.shields.io/badge/%20Visit%20my%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
-</p>
+</p> 
 
 I am a **Software developer specialized in integrating Artificial Intelligence and Big Data** into software solutions. Focused on building automated, data-driven applications through clean code and scalable architecture. I bridge the gap between technical development and business automation.
 
