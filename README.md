@@ -33,7 +33,7 @@
 
 • **Inteligencia Artificial:** LLMs, RAG, Agentes de IA, Pipelines ETL.
 
-**DevOps y Cloud:** Git, Docker, AWS, Azure, Linux.
+• **DevOps y Cloud:** Git, Docker, AWS, Azure, Linux.
 
 • **Automatización:** n8n, Power Platform.
 
