@@ -24,12 +24,19 @@
 ## 💻 Stack Tecnológico
 
 **Backend:** Java (Spring Boot), Python (FastAPI), APIs REST.
+
 **Frontend:** JavaScript, TypeScript (React, Next.js), Tailwind CSS, HTML5/CSS3.
+
 **BBDD y Almacenamiento:** PostgreSQL (pgvector), MySQL, MongoDB.
+
 **ML y DL:** Scikit-learn, PyTorch, Keras, TensorFlow, Pandas, NumPy, PySpark.
+
 **Inteligencia Artificial:** LLMs, RAG, Agentes de IA, Pipelines ETL.
+
 **DevOps y Cloud:** Git, Docker, AWS, Azure, Linux.
+
 **Automatización:** n8n, Power Platform.
+
 **Idiomas:** Español (Nativo), Inglés (C1 Avanzado - EF SET)
 
 
