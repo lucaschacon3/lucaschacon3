@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const message = document.getElementById("message").value.trim();
 
     const body = [
-      `Name: ${firstName} ${lastName}`,
+      `Nombre: ${firstName} ${lastName}`,
       message
-    ].join("\n");
+    ].join("\n\n");
 
     const mailto = `mailto:l.chaconlanga3@gmail.com?subject=${encodeURIComponent(
       subject

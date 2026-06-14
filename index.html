@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucas Chacon Portfolio</title>
+    <title>Lucas Chacón | Desarrollo Web & IA</title>
     <link rel="icon" type="image/png" href="public/favicon.png" />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/sweet-alert.js"></script>
     <script src="js/tailwind.js"></script>
     <script src="js/tailwind-config.js"></script>
     <script src="js/cv-download.js" defer></script>
@@ -24,18 +23,10 @@
         <ul class="hidden md:flex justify-center items-center gap-8 py-4">
           <li>
             <a
-              href="#about"
+              href="#servicios"
               class="text-gray-300 hover:text-primary-300 py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary-300 after:transition-all after:duration-300 hover:after:w-full"
             >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#Experience"
-              class="text-gray-300 hover:text-primary-300 py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary-300 after:transition-all after:duration-300 hover:after:w-full"
-            >
-              Experience
+              Servicios
             </a>
           </li>
           <li>
@@ -43,7 +34,7 @@
               href="#Skills"
               class="text-gray-300 hover:text-primary-300 py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary-300 after:transition-all after:duration-300 hover:after:w-full"
             >
-              Skills
+               Tecnologías
             </a>
           </li>
           <li>
@@ -51,7 +42,7 @@
               href="#Projects"
               class="text-gray-300 hover:text-primary-300 py-2 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary-300 after:transition-all after:duration-300 hover:after:w-full"
             >
-              Projects
+               Proyectos
             </a>
           </li>
           <li>
@@ -59,7 +50,7 @@
               href="#Contact"
               class="px-4 py-2 bg-primary-600/20 hover:bg-primary-600/30 text-primary-300 rounded-lg border border-primary-600/20 hover:border-primary-600/40 transition-all duration-300"
             >
-              Contact
+               Contacto
             </a>
           </li>
         </ul>
@@ -106,20 +97,11 @@
               >
                 <li>
                   <a
-                    href="#about"
+                    href="#servicios"
                     onclick="toggleMobileMenu()"
                     class="block text-gray-300 hover:text-primary-300 hover:bg-primary-600/10 px-4 py-3 rounded-lg transition-all duration-300"
                   >
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#Experience"
-                    onclick="toggleMobileMenu()"
-                    class="block text-gray-300 hover:text-primary-300 hover:bg-primary-600/10 px-4 py-3 rounded-lg transition-all duration-300"
-                  >
-                    Experience
+                    Servicios
                   </a>
                 </li>
                 <li>
@@ -128,7 +110,7 @@
                     onclick="toggleMobileMenu()"
                     class="block text-gray-300 hover:text-primary-300 hover:bg-primary-600/10 px-4 py-3 rounded-lg transition-all duration-300"
                   >
-                    Skills
+                    Tecnologías
                   </a>
                 </li>
                 <li>
@@ -137,7 +119,7 @@
                     onclick="toggleMobileMenu()"
                     class="block text-gray-300 hover:text-primary-300 hover:bg-primary-600/10 px-4 py-3 rounded-lg transition-all duration-300"
                   >
-                    Projects
+                    Proyectos
                   </a>
                 </li>
                 <li class="mt-4">
@@ -146,7 +128,7 @@
                     onclick="toggleMobileMenu()"
                     class="block text-primary-300 bg-primary-600/20 hover:bg-primary-600/30 px-4 py-3 rounded-lg border border-primary-600/20 hover:border-primary-600/40 text-center transition-all duration-300"
                   >
-                    Contact
+                    Contacto
                   </a>
                 </li>
               </ul>
@@ -162,14 +144,10 @@
       <div class="container mx-auto px-4 py-8 text-center">
         <div class="max-w-3xl mx-auto">
           <h1 class="text-7xl font-bold mb-4 gradient-text">Lucas Chacon</h1>
-          <h3 class="text-2xl text-primary-300">Software Developer & AI Engineer</h3>
-          <h4 class="text-2xl text-accent-300 mb-6">
-            GenAI, Agents & Automation Specialist | Data Analytics
-          </h4>
+          <h3 class="text-2xl text-primary-300">Desarrollador de Software | IA & Datos</h3>
           <h5 class="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Crafting innovative web solutions with Java, Spring Boot, React, and
-            cutting-edge AI technologies. Passionate about creating exceptional
-            user experiences and scalable applications.
+            Desarrollo de aplicaciones, automatización con IA, análisis de datos y consultoría tecnológica.
+            Te ayudo a construir el producto digital que tu negocio necesita.
           </h5>
           <div class="flex items-center justify-center gap-6 mb-8">
             <a
@@ -203,14 +181,16 @@
             <a
               href="#Contact"
               class="px-6 py-3 hover-gradient text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20"
-              >Get in touch</a
+              >Contáctame</a
             >
-            <button
+            <a
+              href="public/CV_Lucas_Chacon_esp.pdf"
+              download
               id="download-cv"
-              class="px-6 py-3 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg border border-accent-400/50 hover:border-accent-300 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent-500/20"
+              class="inline-block px-6 py-3 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg border border-accent-400/50 hover:border-accent-300 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent-500/20"
             >
-              Download CV
-            </button>
+              Descargar CV
+            </a>
           </div>
 
           <!-- Social -->
@@ -224,7 +204,7 @@
       <div
         class="absolute bottom-6 -translate-x-1/2 animate-bounce flex flex-col items-center text-gray-400"
       >
-        <span class="text-sm mb-2">Scroll to explore</span>
+        <span class="text-sm mb-2">Desplázate para explorar</span>
         <svg
           class="w-6 h-6"
           fill="none"
@@ -242,195 +222,108 @@
     </header>
 
     <main>
-      <section id="about" class="container mx-auto px-4 py-16">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-1 gap-8">
-          <div class="lg:col-span-1">
-            <div class="card-gradient rounded-lg p-8">
-              <h2 class="text-3xl font-bold mb-6 text-indigo-300">
-                Professional Profile
-              </h2>
-              <p class="text-gray-300 mb-6">
-                Software Developer specialized in Artificial Intelligence and
-                Big Data, with a strong foundation in backend and full stack
-                development. Passionate about creating intelligent, data-driven
-                solutions that automate processes and optimize decision-making.
-                I combine experience in modern web technologies with applied AI
-                and data analytics to build scalable, innovative systems that
-                deliver real impact
-              </p>
-
-              <div class="flex gap-3">
-                <span
-                  class="px-3 py-1 bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-full text-sm"
-                  >Madrid, Spain</span
-                >
-                <span
-                  class="px-3 py-1 bg-blue-500/20 text-blue-300 border border-blue-500/30 rounded-full text-sm"
-                  >Available for Remote</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="max-w-6xl mx-auto mt-8">
-          <div class="bg-gray-800 p-6 rounded-lg border border-primary-800">
-            <h3 class="text-xl font-semibold text-primary-300 mb-2">
-              Education & Growth
-            </h3>
-            <p class="text-gray-300">
-              Higher Technician in Web Application Development with a
-              specialization in Artificial Intelligence and Big Data.
-              Experienced in backend and full stack development, data analysis,
-              and machine learning integration to create automated and
-              intelligent software solutions.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="Experience" class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold mb-8 text-primary-300 text-center">
-          Professional Experience
+      <section id="servicios" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-4 text-primary-300 text-center">
+          Mis Servicios
         </h2>
-        <div class="grid gap-8 max-w-4xl mx-auto">
-          <div class="bg-gray-800 rounded-lg p-6 border border-primary-800">
-            <div class="flex justify-between items-start mb-4">
-              <div>
-                <h3 class="text-xl font-semibold text-primary-300">
-                  GenAI & Automation Specialist
-                </h3>
-                <p class="text-primary-200">Ineco</p>
-              </div>
-              <div class="text-right">
-                <span
-                  class="bg-primary-900 text-primary-200 px-3 py-1 rounded-full text-sm"
-                  >Professional</span
-                >
-                <p class="text-gray-400 mt-2">Madrid • Nov 2025 - Present</p>
-              </div>
+        <p class="text-gray-300 text-center mb-12 max-w-2xl mx-auto">
+          Desarrollo de software, inteligencia artificial y automatización para
+          impulsar tu negocio. Te ofrezco soluciones tecnológicas a medida.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+          <div class="card-gradient rounded-lg p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-indigo-500/20">
+            <div class="text-indigo-400 mb-4 flex justify-center">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+              </svg>
             </div>
-            <p class="text-gray-300 mb-4">
-              Developing AI and Generative AI pilots focused on process
-              automation and virtual assistants.
+            <h3 class="text-xl font-bold text-indigo-300 mb-3">Desarrollo Full Stack</h3>
+            <p class="text-gray-300">
+              Creación de aplicaciones web completas con Java, Spring Boot, React, Next.js y bases de datos relacionales y NoSQL. Desde el prototipo hasta el despliegue.
             </p>
-            <ul class="list-disc list-inside text-gray-300 space-y-2">
-              <li>
-                Development of Generative AI (GenAI) pilots and virtual assistants focused on process automation.
-              </li>
-              <li>
-                Integration of LLM models and advanced AI APIs into internal prototypes.
-              </li>
-              <li>
-                Architecture and design of Intelligent Agents utilizing RAG (Retrieval-Augmented Generation) for optimized document management.
-              </li>
-              <li>
-                Deployment of conversational solutions using Microsoft Copilot Studio, Power Automate, and Power Apps.
-              </li>
-            </ul>
           </div>
 
-          <div class="bg-gray-800 rounded-lg p-6 border border-primary-800">
-            <div class="flex justify-between items-start mb-4">
-              <div>
-                <h3 class="text-xl font-semibold text-primary-300">
-                  ETL & Data visualization Analyst
-                </h3>
-                <p class="text-primary-200">Ineco</p>
-              </div>
-              <div class="text-right">
-                <span
-                  class="bg-primary-900 text-primary-200 px-3 py-1 rounded-full text-sm"
-                  >Professional</span
-                >
-                <p class="text-gray-400 mt-2">Madrid • Nov 2025 - Present</p>
-              </div>
+          <div class="card-gradient rounded-lg p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-indigo-500/20">
+            <div class="text-indigo-400 mb-4 flex justify-center">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+              </svg>
             </div>
-            <p class="text-gray-300 mb-4">
-              Developing Big Data ETL pipelines for BI visualization.
+            <h3 class="text-xl font-bold text-indigo-300 mb-3">Automatización con IA</h3>
+            <p class="text-gray-300">
+              Integración de modelos de lenguaje (LLMs), agentes inteligentes y automatización de procesos con GenAI, RAG y Microsoft Copilot Studio.
             </p>
-            <ul class="list-disc list-inside text-gray-300 space-y-2">
-              <li>
-                Design and implementation of automated ETL pipelines for large-scale datasets (e.g., AEMET).
-              </li>
-              <li>
-                Scientific Data Analysis and visualization using Python (Matplotlib, Seaborn) to identify patterns in environmental data.
-              </li>
-              <li>
-                Development of interactive Power BI dashboards for strategic decision-making.
-              </li>
-              <li>
-                Managed Cloud Infrastructure Migration from AWS to Azure, ensuring data integrity and service continuity.
-              </li>
-            </ul>
           </div>
 
-          <div class="bg-gray-800 rounded-lg p-6 border border-primary-800">
-            <div class="flex justify-between items-start mb-4">
-              <div>
-                <h3 class="text-xl font-semibold text-primary-300">
-                  Software Developer
-                </h3>
-                <p class="text-primary-200">CCOO</p>
-              </div>
-              <div class="text-right">
-                <span
-                  class="bg-primary-900 text-primary-200 px-3 py-1 rounded-full text-sm"
-                  >Professional</span
-                >
-                <p class="text-gray-400 mt-2">Madrid • Mar 2025 - Jun 2025</p>
-              </div>
+          <div class="card-gradient rounded-lg p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-indigo-500/20">
+            <div class="text-indigo-400 mb-4 flex justify-center">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+              </svg>
             </div>
-            <p class="text-gray-300 mb-4">
-              Developed full stack MVC projects with Java (Spring Boot),
-              implementing RESTful APIs and security with Spring Security.
+            <h3 class="text-xl font-bold text-indigo-300 mb-3">Analítica de Datos</h3>
+            <p class="text-gray-300">
+              Pipelines ETL, visualización de datos con Power BI, análisis científico con Python y dashboards interactivos para la toma de decisiones.
             </p>
-            <ul class="list-disc list-inside text-gray-300 space-y-2">
-              <li>Managed OracleDB databases and optimized queries</li>
-              <li>
-                Implemented responsive interfaces using Thymeleaf, JavaScript,
-                jQuery, Bootstrap 5, and SCSS
-              </li>
-              <li>Collaborated in Agile/Scrum teams using Git and GitLab</li>
-            </ul>
           </div>
 
-          <div class="bg-gray-800 rounded-lg p-6 border border-primary-800">
-            <div class="flex justify-between items-start mb-4">
-              <div>
-                <h3 class="text-xl font-semibold text-primary-300">
-                  Catering Assistant
-                </h3>
-                <p class="text-primary-200">CareChoice Group Ireland</p>
-              </div>
-              <div class="text-right">
-                <span
-                  class="bg-primary-900 text-primary-200 px-3 py-1 rounded-full text-sm"
-                  >International</span
-                >
-                <p class="text-gray-400 mt-2">
-                  Dublin, Ireland • Jan 2023 - Sep 2023
-                </p>
-              </div>
+          <div class="card-gradient rounded-lg p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-indigo-500/20">
+            <div class="text-indigo-400 mb-4 flex justify-center">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+              </svg>
             </div>
-            <p class="text-gray-300 mb-4">
-              Worked in a team in an international environment, improving
-              practical English.
+            <h3 class="text-xl font-bold text-indigo-300 mb-3">APIs e Integraciones</h3>
+            <p class="text-gray-300">
+              Diseño e implementación de APIs RESTful seguras con Spring Boot, FastAPI y JWT.
             </p>
-            <ul class="list-disc list-inside text-gray-300 space-y-2">
-              <li>
-                Enhanced English communication skills in professional setting
-              </li>
-              <li>Gained international work experience</li>
-              <li>Developed cultural adaptability and teamwork skills</li>
-            </ul>
           </div>
+
+          <div class="card-gradient rounded-lg p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-indigo-500/20">
+            <div class="text-indigo-400 mb-4 flex justify-center">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 17.25v-.228a4.5 4.5 0 00-.12-1.03l-2.268-9.64a3.375 3.375 0 00-3.285-2.602H7.923a3.375 3.375 0 00-3.285 2.602l-2.268 9.64a4.5 4.5 0 00-.12 1.03v.228m19.5 0a3 3 0 01-3 3H5.25a3 3 0 01-3-3m19.5 0a3 3 0 00-3-3H5.25a3 3 0 00-3 3m16.5 0h.008v.008h-.008v-.008zm-3 0h.008v.008h-.008v-.008z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-indigo-300 mb-3">DevOps & Cloud</h3>
+            <p class="text-gray-300">
+              Despliegue y gestión de infraestructura con Docker, AWS y Azure. Migraciones cloud, CI/CD y administración de servidores Linux.
+            </p>
+          </div>
+
+          <div class="card-gradient rounded-lg p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-indigo-500/20">
+            <div class="text-indigo-400 mb-4 flex justify-center">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-indigo-300 mb-3">Consultoría Tecnológica</h3>
+            <p class="text-gray-300">
+              Asesoramiento en arquitectura de software, selección de tecnologías, revisión de código y estrategia técnica para tu proyecto.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="#Contact"
+            class="inline-block px-8 py-4 hover-gradient text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20"
+          >
+            Solicitar presupuesto
+          </a>
         </div>
       </section>
 
       <section id="Skills" class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold mb-8 text-primary-300 text-center">
-          Tech Stack
-        </h2>
+          <h2 class="text-3xl font-bold mb-4 text-primary-300 text-center">
+            Tecnologías que domino
+          </h2>
+          <p class="text-gray-300 text-center mb-12">
+            Herramientas y frameworks con los que trabajo para construir soluciones robustas
+          </p>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
         >
@@ -452,7 +345,7 @@
                 />
               </svg>
               <h3 class="text-xl font-semibold text-accent-300">
-                Backend Development
+                Desarrollo Backend
               </h3>
             </div>
             <div class="flex flex-wrap gap-2">
@@ -478,15 +371,7 @@
               >
               <span
                 class="bg-accent-500/10 text-accent-300 border border-accent-500/20 px-3 py-1 rounded-full text-sm transition-all hover:bg-accent-500/20"
-                >OAuth2</span
-              >
-              <span
-                class="bg-accent-500/10 text-accent-300 border border-accent-500/20 px-3 py-1 rounded-full text-sm transition-all hover:bg-accent-500/20"
                 >JWT</span
-              >
-              <span
-                class="bg-accent-500/10 text-accent-300 border border-accent-500/20 px-3 py-1 rounded-full text-sm transition-all hover:bg-accent-500/20"
-                >Hexagonal Architecture</span
               >
             </div>
           </div>
@@ -509,7 +394,7 @@
                 />
               </svg>
               <h3 class="text-xl font-semibold text-success-300">
-                Frontend Development
+                Desarrollo Frontend
               </h3>
             </div>
             <div class="flex flex-wrap gap-2">
@@ -542,10 +427,6 @@
                 class="bg-success-400/10 text-success-200 border border-success-400/20 px-3 py-1 rounded-full text-sm transition-all hover:bg-success-400/20"
                 >Tailwind CSS</span
               >
-              <span
-                class="bg-success-400/10 text-success-200 border border-success-400/20 px-3 py-1 rounded-full text-sm transition-all hover:bg-success-400/20"
-                >Bootstrap</span
-              >
             </div>
           </div>
 
@@ -566,7 +447,7 @@
                   d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7zM4 7c0-2 1-3 3-3h10c2 0 3 1 3 3M4 7h16"
                 />
               </svg>
-              <h3 class="text-xl font-semibold text-warning-300">Databases</h3>
+              <h3 class="text-xl font-semibold text-warning-300">Bases de Datos</h3>
             </div>
             <div class="flex flex-wrap gap-2">
               <span
@@ -611,7 +492,7 @@
                 />
               </svg>
               <h3 class="text-xl font-semibold text-accent-300">
-                DevOps & Tools
+                DevOps & Herramientas
               </h3>
             </div>
             <div class="flex flex-wrap gap-2">
@@ -750,23 +631,7 @@
               >
               <span
                 class="bg-warning-300/10 text-warning-200 border border-warning-300/20 px-3 py-1 rounded-full text-sm transition-all hover:bg-warning-300/20"
-                >Hadoop</span
-              >
-              <span
-                class="bg-warning-300/10 text-warning-200 border border-warning-300/20 px-3 py-1 rounded-full text-sm transition-all hover:bg-warning-300/20"
-                >Spark</span
-              >
-              <span
-                class="bg-warning-300/10 text-warning-200 border border-warning-300/20 px-3 py-1 rounded-full text-sm transition-all hover:bg-warning-300/20"
                 >Power BI</span
-              >
-              <span
-                class="bg-warning-300/10 text-warning-200 border border-warning-300/20 px-3 py-1 rounded-full text-sm transition-all hover:bg-warning-300/20"
-                >Grafana</span
-              >
-              <span
-                class="bg-warning-300/10 text-warning-200 border border-warning-300/20 px-3 py-1 rounded-full text-sm transition-all hover:bg-warning-300/20"
-                >Kibana</span
               >
             </div>
           </div>
@@ -775,13 +640,13 @@
             class="bg-gray-800 p-6 rounded-lg border border-primary-800 md:col-span-2 lg:col-span-3"
           >
             <h3 class="text-xl font-semibold text-primary-300 mb-4">
-              Languages
+               Idiomas
             </h3>
             <div class="space-y-4">
               <div>
                 <div class="flex justify-between mb-1">
                   <span class="text-gray-300"
-                    ><span class="font-semibold">Spanish:</span> Native</span
+                    ><span class="font-semibold">Español:</span> Nativo</span
                   >
                 </div>
                 <div class="w-full bg-gray-700 rounded-full h-2.5 mt-4">
@@ -794,14 +659,14 @@
               <div>
                 <div class="flex justify-between mb-1">
                   <span class="text-gray-300"
-                    ><span class="font-semibold">English:</span> C1 Advanced -
-                    EF SET Certificate
+                    ><span class="font-semibold">Inglés:</span> C1 Avanzado -
+                    Certificado EF SET
                     <a
                       href="https://cert.efset.org/ZRYjH6"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="px-3 py-1 bg-blue-500/20 text-blue-400 border-blue-500/30 rounded-full text-sm mb-3"
-                      >Show credentials</a
+                      >Ver credenciales</a
                     ></span
                   >
                 </div>
@@ -817,54 +682,52 @@
         </div>
       </section>
       <section id="Projects" class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold mb-4 text-primary-300 text-center">
-          Featured Projects
-        </h2>
-        <p class="text-gray-300 text-center mb-12">
-          Innovative solutions combining full-stack development with AI
-          technologies
-        </p>
+          <h2 class="text-3xl font-bold mb-4 text-primary-300 text-center">
+            Proyectos Destacados
+          </h2>
+          <p class="text-gray-300 text-center mb-12">
+            Ejemplos de trabajos recientes que combinan desarrollo full-stack con
+            tecnologías de IA
+          </p>
 
         <div class="max-w-4xl mx-auto grid gap-8">
           <div class="bg-gray-800 rounded-lg p-8 border border-primary-800">
             <div class="mb-6">
               <span
                 class="px-3 py-1 bg-green-500/20 text-green-400 border-green-500/30 rounded-full text-sm"
-                >Completed</span
+                >Completado</span
               >
               <h3 class="text-2xl font-bold text-primary-300 mt-1">
                 UFC Rivals
               </h3>
-              <p class="text-primary-200">Full Stack Web App - Final Project</p>
+              <p class="text-primary-200">App Web Full Stack - Proyecto Final</p>
             </div>
 
             <p class="text-gray-300 mb-6">
-              A comprehensive web platform for UFC fight analysis and simulation
-              using AI integration. Features user management, authentication,
-              and interactive fight predictions.
+              Una plataforma web integral para el análisis y simulación de peleas de UFC
+              con integración de IA. Incluye gestión de usuarios, autenticación
+              y predicciones interactivas de combates.
             </p>
 
             <div class="mb-6">
-              <h4 class="text-primary-300 font-semibold mb-3">Key Features:</h4>
+              <h4 class="text-primary-300 font-semibold mb-3">Características Principales:</h4>
               <ul class="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  MVC architecture with Thymeleaf for dynamic server-side
-                  rendering.
+                  Arquitectura MVC con Thymeleaf para renderizado dinámico del lado del servidor.
                 </li>
                 <li>
-                  Secure authentication with Spring Security (classic login and
-                  OAuth providers)
+                  Autenticación segura con Spring Security
                 </li>
                 <li>
-                  OpenAI API integration for interactive fight simulations
+                  Integración con OpenAI API para simulaciones interactivas de combates
                 </li>
-                <li>Responsive frontend with statistics visualization</li>
-                <li>Real-time alerts and notifications system</li>
+                <li>Frontend responsive con visualización de estadísticas</li>
+                <li>Sistema de alertas y notificaciones en tiempo real</li>
               </ul>
             </div>
 
             <div class="mb-8">
-              <h4 class="text-primary-300 font-semibold mb-3">Technologies:</h4>
+              <h4 class="text-primary-300 font-semibold mb-3">Tecnologías:</h4>
               <div class="flex flex-wrap gap-2">
                 <span
                   class="px-3 py-1 bg-primary-900/50 text-primary-200 rounded-full text-sm"
@@ -909,7 +772,71 @@
                     d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
                   />
                 </svg>
-                <span>View Project</span>
+                <span>Ver Proyecto</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-8 border border-primary-800">
+            <div class="mb-6">
+              <span
+                class="px-3 py-1 bg-green-500/20 text-green-400 border-green-500/30 rounded-full text-sm"
+                >Completado</span
+              >
+              <h3 class="text-2xl font-bold text-primary-300 mt-1">
+                E-Commerce Sales Forecast
+              </h3>
+              <p class="text-primary-200">Proyecto Fin de Máster</p>
+              <p class="text-gray-400 text-sm mt-1">abr. 2026 – jul. 2026 • Asociado con Monlau Formación Profesional</p>
+            </div>
+
+            <p class="text-gray-300 mb-6">
+              Pipeline completo de Ciencia de Datos enfocado en analítica predictiva y comportamiento del consumidor sobre un dataset transaccional de más de 540K registros.
+            </p>
+
+            <div class="mb-6">
+              <h4 class="text-primary-300 font-semibold mb-3">Características Principales:</h4>
+              <ul class="list-disc list-inside text-gray-300 space-y-2">
+                <li>
+                  Ingeniería de Datos: limpieza, filtrado de cancelaciones y estructuración de variables temporales.
+                </li>
+                <li>
+                  Modelado Predictivo: regresión temporal con LightGBM, XGBoost y Random Forest mediante ventana deslizante.
+                </li>
+                <li>
+                  Clustering y Perfilado: detección de anomalías con Isolation Forest, reducción con PCA y segmentación con K-Means.
+                </li>
+                <li>
+                  Visualización: dashboards interactivos en Power BI para comparativa de métricas y análisis de clústeres.
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-8">
+              <h4 class="text-primary-300 font-semibold mb-3">Tecnologías:</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-primary-900/50 text-primary-200 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-primary-900/50 text-primary-200 rounded-full text-sm">Pandas</span>
+                <span class="px-3 py-1 bg-primary-900/50 text-primary-200 rounded-full text-sm">Polars</span>
+                <span class="px-3 py-1 bg-primary-900/50 text-primary-200 rounded-full text-sm">Scikit-Learn</span>
+                <span class="px-3 py-1 bg-primary-900/50 text-primary-200 rounded-full text-sm">LightGBM</span>
+                <span class="px-3 py-1 bg-primary-900/50 text-primary-200 rounded-full text-sm">XGBoost</span>
+                <span class="px-3 py-1 bg-primary-900/50 text-primary-200 rounded-full text-sm">Power BI</span>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <a
+                href="https://github.com/lucaschacon3/TFM-E-Commerce-Sales-Forecast"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 px-6 py-2 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors"
+              >
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+                <span>Ver Proyecto</span>
               </a>
             </div>
           </div>
@@ -918,19 +845,16 @@
             class="bg-gray-800 rounded-lg p-8 border border-primary-800 text-center"
           >
             <h3 class="text-2xl font-bold text-primary-300 mb-4">
-              More Projects Coming Soon
+              ¿Tienes un proyecto en mente?
             </h3>
             <p class="text-gray-300 mb-6">
-              I'm constantly working on new projects that push the boundaries of
-              web development and AI integration. Stay tuned for more innovative
-              solutions!
+              Cada proyecto es único. Si tienes una idea, un MVP que desarrollar o
+              necesitas mejorar un sistema existente, estaré encantado de ayudarte.
             </p>
             <a
-              href="https://github.com/lucaschacon3?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#Contact"
               class="inline-block px-6 py-2 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors"
-              >View All on GitHub</a
+              >Hablemos de tu proyecto</a
             >
           </div>
         </div>
@@ -939,22 +863,21 @@
       <section id="Contact" class="container mx-auto px-4 py-16">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-primary-300 text-center mb-2">
-            Let's Connect
+            Trabajemos juntos
           </h2>
           <p class="text-gray-300 text-center mb-12">
-            Ready to bring your next project to life? Let's discuss how we can
-            work together.
+            Cuéntame sobre tu proyecto y te responderé en menos de 24 horas.
           </p>
 
           <div class="grid md:grid-cols-2 gap-12">
             <div>
               <h3 class="text-2xl font-semibold text-primary-300 mb-6">
-                Get in Touch
+                Hablemos
               </h3>
               <p class="text-gray-300 mb-8">
-                Whether you're looking for a skilled developer for your team,
-                have a project in mind, or just want to connect, I'd love to
-                hear from you. Let's create something amazing together!
+                ¿Necesitas un desarrollador para tu equipo, una aplicación web,
+                automatizar procesos con IA o simplemente quieres consultarme algo?
+                Estoy aquí para ayudarte.
               </p>
 
               <div class="space-y-6">
@@ -1001,7 +924,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h4 class="text-primary-300 font-medium">Phone</h4>
+                    <h4 class="text-primary-300 font-medium">Teléfono</h4>
                     <p class="text-gray-300">+34 601 150 367</p>
                   </div>
                 </div>
@@ -1029,14 +952,14 @@
                     </svg>
                   </div>
                   <div>
-                    <h4 class="text-primary-300 font-medium">Location</h4>
-                    <p class="text-gray-300">Madrid, Spain</p>
+                    <h4 class="text-primary-300 font-medium">Ubicación</h4>
+                    <p class="text-gray-300">Madrid, España</p>
                   </div>
                 </div>
               </div>
 
               <div class="mt-8">
-                <h4 class="text-primary-300 font-medium mb-4">Follow Me</h4>
+                <h4 class="text-primary-300 font-medium mb-4">Sígueme</h4>
                 <div class="flex space-x-4">
                   <a
                     href="https://www.linkedin.com/in/lucaschacon3/"
@@ -1076,7 +999,7 @@
 
             <div class="bg-gray-800 p-8 rounded-lg border border-primary-800">
               <h3 class="text-2xl font-semibold text-primary-300 mb-6">
-                Send a Message
+                Enviar Mensaje
               </h3>
 
               <form id="contact-form" class="space-y-6">
@@ -1085,13 +1008,13 @@
                     <label
                       for="firstName"
                       class="block text-sm font-medium text-gray-300 mb-2"
-                      >First Name</label
+                      >Nombre</label
                     >
                     <input
                       type="text"
                       id="firstName"
                       name="firstName"
-                      placeholder="Your first name"
+                      placeholder="Tu nombre"
                       required
                       autocomplete="given-name"
                       class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
@@ -1101,13 +1024,13 @@
                     <label
                       for="lastName"
                       class="block text-sm font-medium text-gray-300 mb-2"
-                      >Last Name</label
+                      >Apellidos</label
                     >
                     <input
                       type="text"
                       id="lastName"
                       name="lastName"
-                      placeholder="Your last name"
+                      placeholder="Tus apellidos"
                       required
                       autocomplete="family-name"
                       class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
@@ -1119,13 +1042,13 @@
                   <label
                     for="subject"
                     class="block text-sm font-medium text-gray-300 mb-2"
-                    >Subject</label
+                    >Asunto</label
                   >
                   <input
                     type="text"
                     id="subject"
                     name="subject"
-                    placeholder="What's this about?"
+                    placeholder="¿Sobre qué trata?"
                     required
                     class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
                   />
@@ -1135,14 +1058,14 @@
                   <label
                     for="message"
                     class="block text-sm font-medium text-gray-300 mb-2"
-                    >Message</label
+                    >Mensaje</label
                   >
                   <textarea
                     id="message"
                     name="message"
                     rows="4"
                     required
-                    placeholder="Tell me about your project or just say hello!"
+                    placeholder="Cuéntame sobre tu proyecto o simplemente saluda!"
                     class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-primary-500 text-gray-200"
                   ></textarea>
                 </div>
@@ -1151,7 +1074,7 @@
                   type="submit"
                   class="w-full px-6 py-3 bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors text-white font-medium"
                 >
-                  Send Message
+                  Enviar Mensaje
                 </button>
 
                 <!-- Fallback si JS está deshabilitado -->
@@ -1172,5 +1095,13 @@
         </div>
       </section>
     </main>
+
+    <footer class="border-t border-gray-800 py-8 mt-16">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-400 text-sm">
+          &copy; 2026 Lucas Chacón. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
