@@ -230,7 +230,7 @@ function initTheme() {
   const toggle = document.getElementById('theme-toggle');
   if (!toggle) return;
 
-  const sunPath = 'M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.95l-.71.71M21 12h-1M4 12H3m15.66 7.66l-.71-.71M4.05 4.05l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z';
+  const sunPath = 'M12 5V1.5M12 19V22.5M5 12H1.5M19 12H22.5M7.05 7.05L4.58 4.58M16.95 7.05l2.47-2.47M16.95 16.95l2.48 2.48M7.05 16.95l-2.47 2.48M16 12a4 4 0 11-8 0 4 4 0 018 0z';
   const moonPath = 'M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z';
 
   const saved = localStorage.getItem('theme');
@@ -281,8 +281,8 @@ const translations = {
   es: {
     'hero-title': 'LUCAS',
     'hero-title-accent': 'CHACON',
-    'hero-subtitle': 'Desarrollador de Software & IA',
-    'hero-desc': 'Construyo productos digitales con propósito. Especializado en desarrollo full-stack, inteligencia artificial y automatización inteligente.',
+    'hero-subtitle': 'Ingeniero de Software e IA',
+    'hero-desc': 'Construyo software escalable y automatizaciones que optimizan procesos.',
     'hero-cta': 'Ver Trabajos',
     'menu-home': 'Home',
     'menu-work': 'Work',
@@ -290,10 +290,10 @@ const translations = {
     'menu-contact': 'Contact',
     'about-title': 'Sobre Mí',
     'about-number': '02',
-    'about-desc': 'Desarrollador de software apasionado por la IA y los datos.',
-    'about-p1': 'Soy <strong>Lucas Chacon</strong>, desarrollador de software con sede en Madrid. Mi trabajo abarca desde el desarrollo full-stack hasta la inteligencia artificial y el análisis de datos. Me enfoco en crear productos digitales que resuelven problemas reales.',
-    'about-p2': 'Actualmente curso <strong>Ingeniería Informática</strong> en la Universidad Europea y he completado un Máster en <strong>Inteligencia Artificial y Big Data</strong>. Me apasiona la intersección entre la ingeniería de software y la IA generativa.',
-    'about-p3': 'Creo en el código limpio, las arquitecturas escalables y el aprendizaje continuo. Cuando no estoy programando, me encontrarás explorando nuevas tecnologías o contribuyendo a proyectos open-source.',
+    'about-desc': 'Especializado en IA generativa, RAG e ingeniería de datos.',
+    'about-p1': 'Especializado en <strong>IA generativa</strong>: LLMs, arquitecturas <strong>RAG</strong> y agentes de IA aplicados a producto. Diseño motores conversacionales y automatizaciones end-to-end apoyándome en modelos de Machine Learning.',
+    'about-p2': 'Arquitecturas de IA en cloud: <strong>Azure</strong> (OpenAI, AI Search, Functions, Blob Storage, Application Insights) y <strong>AWS</strong> (Bedrock, EC2). Desarrollo <strong>pipelines ETL</strong> con Python y PostgreSQL (pgvector), orquestación con n8n y despliegues con Docker.',
+    'about-p3': 'Stack: <strong>Python (FastAPI), Java (Spring Boot)</strong>, JavaScript y Tailwind; PostgreSQL/pgvector, Pandas, Scikit-learn, LightGBM y XGBoost; Git, Docker y Linux.',
     'about-skills-title': 'Competencias',
     'about-cv': 'Descargar CV',
     'work-title': 'Trabajos',
@@ -304,30 +304,29 @@ const translations = {
     'contact-desc': 'Trabajemos juntos. Cuéntame sobre tu proyecto.',
     'contact-info-title': 'Hablemos',
     'contact-info-text': 'Estoy abierto a colaboraciones, oportunidades laborales o simplemente una charla sobre tecnología. No dudes en contactarme.',
-    'contact-form-name': 'Nombre',
-    'contact-form-email': 'Email',
     'contact-form-subject': 'Asunto',
     'contact-form-message': 'Mensaje',
     'contact-form-submit': 'Enviar Mensaje',
     'scroll-text': 'Desplázate',
     'footer-text': '© 2026 Lucas Chacon. Todos los derechos reservados.',
     'work-tag-1': 'Proyecto Destacado',
-    'work-title-1': 'UFC Rivals',
-    'work-desc-1': 'Plataforma web para análisis de peleas UFC con simulación por IA. Autenticación segura, estadísticas y predicciones interactivas.',
+    'work-title-1': 'BotFarma',
+    'work-desc-1': 'Chatbot farmacéutico con IA que optimiza la consulta y gestión del sector salud. Arquitectura RAG, motor conversacional, aplicación full-stack e infraestructura cloud.',
     'work-tag-2': 'Proyecto Destacado',
-    'work-title-2': 'E-Commerce Sales Forecast',
-    'work-desc-2': 'Pipeline completo de ciencia de datos para análisis predictivo del comportamiento del consumidor con más de 540K registros.',
-    'work-tag-3': 'Open Source',
-    'work-title-3': 'opencode',
-    'work-desc-3': 'Asistente de IA para terminal que automatiza flujos de trabajo de desarrollo de software directamente desde la línea de comandos.',
+    'work-title-2': 'UFC Rivals',
+    'work-desc-2': 'Plataforma web para análisis de peleas UFC con simulación por IA. Autenticación segura, estadísticas y predicciones interactivas.',
+    'work-tag-3': 'Proyecto Destacado',
+    'work-title-3': 'E-Commerce Sales Forecast',
+    'work-desc-3': 'Pipeline completo de ciencia de datos para análisis predictivo del comportamiento del consumidor con más de 540K registros.',
     'preview-default-title': 'Selecciona un proyecto',
-    'preview-default-desc': 'Pasa el ratón sobre un proyecto de la lista para ver los detalles.',
+    'preview-default-desc': 'Pasa el ratón o haz clic en un proyecto para ver y fijar los detalles.',
+    'preview-link-label': 'Ver proyecto',
   },
   en: {
     'hero-title': 'LUCAS',
     'hero-title-accent': 'CHACON',
-    'hero-subtitle': 'Software Developer & AI',
-    'hero-desc': 'I build purpose-driven digital products. Specialized in full-stack development, artificial intelligence, and intelligent automation.',
+    'hero-subtitle': 'Software & AI Engineer',
+    'hero-desc': 'I build scalable software and automations that streamline processes.',
     'hero-cta': 'View Work',
     'menu-home': 'Home',
     'menu-work': 'Work',
@@ -335,10 +334,10 @@ const translations = {
     'menu-contact': 'Contact',
     'about-title': 'About Me',
     'about-number': '02',
-    'about-desc': 'Software developer passionate about AI and data.',
-    'about-p1': 'I\'m <strong>Lucas Chacon</strong>, a software developer based in Madrid. My work spans full-stack development, artificial intelligence, and data analytics. I focus on creating digital products that solve real problems.',
-    'about-p2': 'I\'m currently pursuing a degree in <strong>Computer Engineering</strong> at Universidad Europea and have completed a Master\'s in <strong>AI and Big Data</strong>. I\'m passionate about the intersection of software engineering and generative AI.',
-    'about-p3': 'I believe in clean code, scalable architectures, and continuous learning. When I\'m not coding, you\'ll find me exploring new technologies or contributing to open-source projects.',
+    'about-desc': 'Specialized in generative AI, RAG and data engineering.',
+    'about-p1': 'Specialized in <strong>generative AI</strong>: LLMs, <strong>RAG</strong> architectures and AI agents applied to product. I design conversational engines and end-to-end automations powered by Machine Learning models.',
+    'about-p2': 'AI architectures on the cloud: <strong>Azure</strong> (OpenAI, AI Search, Functions, Blob Storage, Application Insights) and <strong>AWS</strong> (Bedrock, EC2). I build <strong>ETL pipelines</strong> with Python and PostgreSQL (pgvector), orchestration with n8n, and deployments with Docker.',
+    'about-p3': 'Stack: <strong>Python (FastAPI), Java (Spring Boot)</strong>, JavaScript and Tailwind; PostgreSQL/pgvector, Pandas, Scikit-learn, LightGBM and XGBoost; Git, Docker and Linux.',
     'about-skills-title': 'Skills',
     'about-cv': 'Download CV',
     'work-title': 'Work',
@@ -349,24 +348,23 @@ const translations = {
     'contact-desc': 'Let\'s work together. Tell me about your project.',
     'contact-info-title': 'Let\'s Talk',
     'contact-info-text': 'I\'m open to collaborations, job opportunities, or just a chat about technology. Don\'t hesitate to reach out.',
-    'contact-form-name': 'Name',
-    'contact-form-email': 'Email',
     'contact-form-subject': 'Subject',
     'contact-form-message': 'Message',
     'contact-form-submit': 'Send Message',
     'scroll-text': 'Scroll',
     'footer-text': '© 2026 Lucas Chacon. All rights reserved.',
     'work-tag-1': 'Featured Project',
-    'work-title-1': 'UFC Rivals',
-    'work-desc-1': 'Web platform for UFC fight analysis with AI simulation. Secure authentication, statistics, and interactive predictions.',
+    'work-title-1': 'BotFarma',
+    'work-desc-1': 'AI-powered pharmacy chatbot that streamlines consultation and management in the healthcare sector. RAG architecture, conversational engine, full-stack app, and cloud infrastructure.',
     'work-tag-2': 'Featured Project',
-    'work-title-2': 'E-Commerce Sales Forecast',
-    'work-desc-2': 'Complete data science pipeline for predictive analysis of consumer behavior with over 540K records.',
-    'work-tag-3': 'Open Source',
-    'work-title-3': 'opencode',
-    'work-desc-3': 'AI assistant for the terminal that automates software development workflows directly from the command line.',
+    'work-title-2': 'UFC Rivals',
+    'work-desc-2': 'Web platform for UFC fight analysis with AI simulation. Secure authentication, statistics, and interactive predictions.',
+    'work-tag-3': 'Featured Project',
+    'work-title-3': 'E-Commerce Sales Forecast',
+    'work-desc-3': 'Complete data science pipeline for predictive analysis of consumer behavior with over 540K records.',
     'preview-default-title': 'Select a project',
-    'preview-default-desc': 'Hover over a project on the list to see details.',
+    'preview-default-desc': 'Hover over or click a project to view and pin its details.',
+    'preview-link-label': 'View project',
   },
 };
 
@@ -377,13 +375,10 @@ function initContactForm() {
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = document.getElementById('name')?.value.trim() || '';
-    const email = document.getElementById('email')?.value.trim() || '';
     const subject = document.getElementById('subject')?.value.trim() || '';
     const message = document.getElementById('message')?.value.trim() || '';
 
-    const body = [`Name: ${name}`, `Email: ${email}`, '', message].join('\n');
-    const mailto = `mailto:l.chaconlanga3@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:l.chaconlanga3@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
     window.location.href = mailto;
   });
 }
@@ -397,6 +392,8 @@ function initWorkPreview() {
   const previewDesc = document.getElementById('preview-desc');
   const previewTags = document.getElementById('preview-tags');
   const previewLink = document.getElementById('preview-link');
+  const previewImage = document.getElementById('preview-image');
+  const previewImg = document.getElementById('preview-img');
 
   if (!items.length || !previewTitle) return;
 
@@ -405,7 +402,7 @@ function initWorkPreview() {
     if (previewContent) previewContent.style.display = 'none';
   };
 
-  const showPreview = (title, desc, tags, link) => {
+  const showPreview = (title, desc, tags, link, image) => {
     if (previewDefault) previewDefault.style.display = 'none';
     if (previewContent) previewContent.style.display = 'block';
     previewTitle.textContent = title;
@@ -413,24 +410,55 @@ function initWorkPreview() {
     if (previewTags) {
       previewTags.innerHTML = tags.split(',').map(t => `<span>${t.trim()}</span>`).join('');
     }
+    if (previewImage && previewImg) {
+      if (image) {
+        previewImg.src = image;
+        previewImg.alt = title;
+        previewImage.style.display = 'block';
+      } else {
+        previewImg.removeAttribute('src');
+        previewImage.style.display = 'none';
+      }
+    }
     if (previewLink) {
-      previewLink.style.display = 'inline-flex';
-      previewLink.href = link;
+      if (link) {
+        previewLink.style.display = 'inline-flex';
+        previewLink.href = link;
+      } else {
+        previewLink.style.display = 'none';
+      }
     }
   };
 
   showDefault();
 
+  let lockedItem = null;
+
+  const previewItem = (item) => {
+    showPreview(
+      item.dataset.previewTitle || '',
+      item.dataset.previewDesc || '',
+      item.dataset.previewTags || '',
+      item.dataset.previewLink || '',
+      item.dataset.previewImage || ''
+    );
+  };
+
+  const setActive = (item) => {
+    items.forEach(el => el.classList.toggle('active', el === item));
+  };
+
   items.forEach(item => {
-    item.addEventListener('mouseenter', () => {
-      showPreview(
-        item.dataset.previewTitle || '',
-        item.dataset.previewDesc || '',
-        item.dataset.previewTags || '',
-        item.dataset.previewLink || ''
-      );
+    item.addEventListener('mouseenter', () => previewItem(item));
+    item.addEventListener('mouseleave', () => {
+      if (lockedItem) previewItem(lockedItem);
+      else showDefault();
     });
-    item.addEventListener('mouseleave', showDefault);
+    item.addEventListener('click', () => {
+      lockedItem = item;
+      setActive(item);
+      previewItem(item);
+    });
   });
 }
 

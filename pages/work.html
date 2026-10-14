@@ -30,7 +30,7 @@
       <button class="header-btn" data-lang="en">EN</button>
       <button id="theme-toggle" class="header-btn theme-icon">
         <svg viewBox="0 0 24 24">
-          <path d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.95l-.71.71M21 12h-1M4 12H3m15.66 7.66l-.71-.71M4.05 4.05l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          <path d="M12 5V1.5M12 19V22.5M5 12H1.5M19 12H22.5M7.05 7.05L4.58 4.58M16.95 7.05l2.47-2.47M16.95 16.95l2.48 2.48M7.05 16.95l-2.47 2.48M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
       </button>
       <button id="menu-btn" class="header-btn">
@@ -76,48 +76,54 @@
           <div class="work-preview" id="work-preview">
             <div class="preview-default" id="preview-default">
               <p data-lang-text="preview-default-title">Selecciona un proyecto</p>
-              <p style="margin-top:8px;font-size:13px;color:var(--text-dim)" data-lang-text="preview-default-desc">Pasa el ratón sobre un proyecto de la lista para ver los detalles.</p>
+              <p style="margin-top:8px;font-size:13px;color:var(--text-dim)" data-lang-text="preview-default-desc">Pasa el ratón o haz clic en un proyecto para ver y fijar los detalles.</p>
             </div>
             <div id="preview-content" style="display:none">
+              <div class="preview-image" id="preview-image">
+                <img id="preview-img" src="" alt="" />
+              </div>
               <div class="preview-title" id="preview-title"></div>
               <div class="preview-desc" id="preview-desc"></div>
               <div class="preview-tags" id="preview-tags"></div>
               <a class="preview-link" id="preview-link" href="#" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                GitHub
+                <svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.414l-8.293 8.293-1.414-1.414L17.586 5H14V3zM5 5h6V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-6h-2v6H5V5z"/></svg>
+                <span data-lang-text="preview-link-label">Ver proyecto</span>
               </a>
             </div>
           </div>
 
           <div class="work-list">
             <div class="work-list-item"
+              data-preview-title="BotFarma"
+              data-preview-desc="Chatbot farmacéutico con IA generativa que optimiza la consulta y gestión del sector salud. Arquitectura RAG, motor conversacional, aplicación full-stack e infraestructura cloud."
+              data-preview-tags="Python,RAG,LLM,Full Stack,Cloud"
+              data-preview-image="../public/img/botfarma.png"
+              data-preview-link="https://botfarma.es">
+              <span class="work-num">01</span>
+              <h3 data-lang-text="work-title-1">BotFarma</h3>
+              <p data-lang-text="work-desc-1">Chatbot farmacéutico con IA que optimiza la consulta y gestión del sector salud. Arquitectura RAG, motor conversacional e infraestructura cloud.</p>
+            </div>
+
+            <div class="work-list-item"
               data-preview-title="UFC Rivals"
               data-preview-desc="Plataforma web para análisis de peleas UFC con simulación por IA. Autenticación segura, estadísticas y predicciones interactivas."
               data-preview-tags="Spring Boot,Spring Security,PostgreSQL,OpenAI API,Chart.js"
+              data-preview-image="../public/img/ufc-rivals.png"
               data-preview-link="https://github.com/lucaschacon3/UFC-Rivals">
-              <span class="work-num">01</span>
-              <h3 data-lang-text="work-title-1">UFC Rivals</h3>
-              <p data-lang-text="work-desc-1">Plataforma web para análisis de peleas UFC con simulación por IA. Autenticación segura, estadísticas y predicciones interactivas.</p>
+              <span class="work-num">02</span>
+              <h3 data-lang-text="work-title-2">UFC Rivals</h3>
+              <p data-lang-text="work-desc-2">Plataforma web para análisis de peleas UFC con simulación por IA. Autenticación segura, estadísticas y predicciones interactivas.</p>
             </div>
 
             <div class="work-list-item"
               data-preview-title="E-Commerce Sales Forecast"
               data-preview-desc="Pipeline completo de ciencia de datos para análisis predictivo del comportamiento del consumidor con más de 540K registros."
               data-preview-tags="Python,Pandas,Scikit-Learn,LightGBM,XGBoost,Power BI"
+              data-preview-image="../public/img/ecommerce-forecast.png"
               data-preview-link="https://github.com/lucaschacon3/TFM-E-Commerce-Sales-Forecast">
-              <span class="work-num">02</span>
-              <h3 data-lang-text="work-title-2">E-Commerce Sales Forecast</h3>
-              <p data-lang-text="work-desc-2">Pipeline completo de ciencia de datos para análisis predictivo del comportamiento del consumidor con más de 540K registros.</p>
-            </div>
-
-            <div class="work-list-item"
-              data-preview-title="opencode"
-              data-preview-desc="Asistente de IA para terminal que automatiza flujos de trabajo de desarrollo de software directamente desde la línea de comandos."
-              data-preview-tags="TypeScript,Node.js,AI,CLI"
-              data-preview-link="https://github.com/anomalyco/opencode">
               <span class="work-num">03</span>
-              <h3 data-lang-text="work-title-3">opencode</h3>
-              <p data-lang-text="work-desc-3">Asistente de IA para terminal que automatiza flujos de trabajo de desarrollo de software directamente desde la línea de comandos.</p>
+              <h3 data-lang-text="work-title-3">E-Commerce Sales Forecast</h3>
+              <p data-lang-text="work-desc-3">Pipeline completo de ciencia de datos para análisis predictivo del comportamiento del consumidor con más de 540K registros.</p>
             </div>
           </div>
         </div>

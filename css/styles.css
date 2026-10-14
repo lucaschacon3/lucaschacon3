@@ -530,6 +530,28 @@ header {
   transition: border-color 0.4s ease;
 }
 
+.work-preview .preview-image {
+  display: none;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+  background: var(--bg-alt);
+  overflow: hidden;
+  transition: border-color 0.4s ease;
+}
+
+.work-preview:hover .preview-image {
+  border-color: var(--accent);
+}
+
+.work-preview .preview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .work-preview .preview-title {
   font-family: var(--font-heading);
   font-size: 28px;
@@ -629,6 +651,16 @@ header {
 }
 
 .work-list-item:hover::before {
+  transform: scaleY(1);
+}
+
+.work-list-item.active {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+  transform: translateX(4px);
+}
+
+.work-list-item.active::before {
   transform: scaleY(1);
 }
 
@@ -797,6 +829,11 @@ header {
   flex-shrink: 0;
 }
 
+.contact-detail svg.icon-fill {
+  fill: var(--accent);
+  stroke: none;
+}
+
 .contact-detail .detail-label {
   font-size: 11px;
   font-weight: 500;
@@ -810,6 +847,18 @@ header {
   font-size: 14px;
   color: var(--text);
   font-weight: 400;
+}
+
+.contact-detail .detail-value a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-detail .detail-value a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .contact-form {
