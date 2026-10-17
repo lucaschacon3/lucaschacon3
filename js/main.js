@@ -247,9 +247,42 @@ function initTheme() {
 }
 
 // ─── Language Switcher ───────────────────────────────────
-function initLanguage() {
+
+// ─── Translations ────────────────────────────────────────
+let translations = null;
+let workPreviewRefresh = null;
+async function loadTranslations() {
+  try {
+    const base = new URL('../public/locales/', import.meta.url);
+    const [esRes, enRes] = await Promise.all([
+      fetch(new URL('es.json', base)),
+      fetch(new URL('en.json', base))
+    ]);
+    const es = await esRes.json();
+    const en = await enRes.json();
+    translations = { es, en };
+  } catch (e) {
+    try {
+      // fallback to current path context
+      const [esRes, enRes] = await Promise.all([
+        fetch('/public/locales/es.json'),
+        fetch('/public/locales/en.json')
+      ]);
+      const es = await esRes.json();
+      const en = await enRes.json();
+      translations = { es, en };
+    } catch (e2) {
+      translations = { es: {}, en: {} };
+    }
+  }
+  return translations;
+}
+
+async function initLanguage() {
   const langBtns = document.querySelectorAll('[data-lang]');
   if (!langBtns.length) return;
+
+  await loadTranslations();
 
   const saved = localStorage.getItem('lang') || 'es';
   setLanguage(saved);
@@ -264,109 +297,22 @@ function initLanguage() {
 
   function setLanguage(lang) {
     langBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+    const t = (translations && (translations[lang] || translations.es)) || {};
     document.querySelectorAll('[data-lang-text]').forEach(el => {
       const key = el.dataset.langText;
-      const texts = translations[lang] || translations.es;
-      if (texts[key]) el.innerHTML = texts[key];
+      if (t[key] != null) el.innerHTML = t[key];
     });
     document.querySelectorAll('[data-lang-placeholder]').forEach(el => {
       const key = el.dataset.langPlaceholder;
-      const texts = translations[lang] || translations.es;
-      if (texts[key]) el.placeholder = texts[key];
+      if (t[key] != null) el.placeholder = t[key];
     });
+    if (typeof workPreviewRefresh === 'function') {
+      workPreviewRefresh();
+    }
   }
 }
 
-const translations = {
-  es: {
-    'hero-title': 'LUCAS',
-    'hero-title-accent': 'CHACON',
-    'hero-subtitle': 'Ingeniero de Software e IA',
-    'hero-desc': 'Construyo software escalable y automatizaciones que optimizan procesos.',
-    'hero-cta': 'Ver Trabajos',
-    'menu-home': 'Home',
-    'menu-work': 'Work',
-    'menu-about': 'About',
-    'menu-contact': 'Contact',
-    'about-title': 'Sobre Mí',
-    'about-number': '02',
-    'about-desc': 'Especializado en IA generativa, RAG e ingeniería de datos.',
-    'about-p1': 'Especializado en <strong>IA generativa</strong>: LLMs, arquitecturas <strong>RAG</strong> y agentes de IA aplicados a producto. Diseño motores conversacionales y automatizaciones end-to-end apoyándome en modelos de Machine Learning.',
-    'about-p2': 'Arquitecturas de IA en cloud: <strong>Azure</strong> (OpenAI, AI Search, Functions, Blob Storage, Application Insights) y <strong>AWS</strong> (Bedrock, EC2). Desarrollo <strong>pipelines ETL</strong> con Python y PostgreSQL (pgvector), orquestación con n8n y despliegues con Docker.',
-    'about-p3': 'Stack: <strong>Python (FastAPI), Java (Spring Boot)</strong>, JavaScript y Tailwind; PostgreSQL/pgvector, Pandas, Scikit-learn, LightGBM y XGBoost; Git, Docker y Linux.',
-    'about-skills-title': 'Competencias',
-    'about-cv': 'Descargar CV',
-    'work-title': 'Trabajos',
-    'work-number': '01',
-    'work-desc': 'Proyectos seleccionados que muestran mi experiencia.',
-    'contact-title': 'Contacto',
-    'contact-number': '03',
-    'contact-desc': 'Trabajemos juntos. Cuéntame sobre tu proyecto.',
-    'contact-info-title': 'Hablemos',
-    'contact-info-text': 'Estoy abierto a colaboraciones, oportunidades laborales o simplemente una charla sobre tecnología. No dudes en contactarme.',
-    'contact-form-subject': 'Asunto',
-    'contact-form-message': 'Mensaje',
-    'contact-form-submit': 'Enviar Mensaje',
-    'scroll-text': 'Desplázate',
-    'footer-text': '© 2026 Lucas Chacon. Todos los derechos reservados.',
-    'work-tag-1': 'Proyecto Destacado',
-    'work-title-1': 'BotFarma',
-    'work-desc-1': 'Chatbot farmacéutico con IA que optimiza la consulta y gestión del sector salud. Arquitectura RAG, motor conversacional, aplicación full-stack e infraestructura cloud.',
-    'work-tag-2': 'Proyecto Destacado',
-    'work-title-2': 'UFC Rivals',
-    'work-desc-2': 'Plataforma web para análisis de peleas UFC con simulación por IA. Autenticación segura, estadísticas y predicciones interactivas.',
-    'work-tag-3': 'Proyecto Destacado',
-    'work-title-3': 'E-Commerce Sales Forecast',
-    'work-desc-3': 'Pipeline completo de ciencia de datos para análisis predictivo del comportamiento del consumidor con más de 540K registros.',
-    'preview-default-title': 'Selecciona un proyecto',
-    'preview-default-desc': 'Pasa el ratón o haz clic en un proyecto para ver y fijar los detalles.',
-    'preview-link-label': 'Ver proyecto',
-  },
-  en: {
-    'hero-title': 'LUCAS',
-    'hero-title-accent': 'CHACON',
-    'hero-subtitle': 'Software & AI Engineer',
-    'hero-desc': 'I build scalable software and automations that streamline processes.',
-    'hero-cta': 'View Work',
-    'menu-home': 'Home',
-    'menu-work': 'Work',
-    'menu-about': 'About',
-    'menu-contact': 'Contact',
-    'about-title': 'About Me',
-    'about-number': '02',
-    'about-desc': 'Specialized in generative AI, RAG and data engineering.',
-    'about-p1': 'Specialized in <strong>generative AI</strong>: LLMs, <strong>RAG</strong> architectures and AI agents applied to product. I design conversational engines and end-to-end automations powered by Machine Learning models.',
-    'about-p2': 'AI architectures on the cloud: <strong>Azure</strong> (OpenAI, AI Search, Functions, Blob Storage, Application Insights) and <strong>AWS</strong> (Bedrock, EC2). I build <strong>ETL pipelines</strong> with Python and PostgreSQL (pgvector), orchestration with n8n, and deployments with Docker.',
-    'about-p3': 'Stack: <strong>Python (FastAPI), Java (Spring Boot)</strong>, JavaScript and Tailwind; PostgreSQL/pgvector, Pandas, Scikit-learn, LightGBM and XGBoost; Git, Docker and Linux.',
-    'about-skills-title': 'Skills',
-    'about-cv': 'Download CV',
-    'work-title': 'Work',
-    'work-number': '01',
-    'work-desc': 'Selected projects showcasing my expertise.',
-    'contact-title': 'Contact',
-    'contact-number': '03',
-    'contact-desc': 'Let\'s work together. Tell me about your project.',
-    'contact-info-title': 'Let\'s Talk',
-    'contact-info-text': 'I\'m open to collaborations, job opportunities, or just a chat about technology. Don\'t hesitate to reach out.',
-    'contact-form-subject': 'Subject',
-    'contact-form-message': 'Message',
-    'contact-form-submit': 'Send Message',
-    'scroll-text': 'Scroll',
-    'footer-text': '© 2026 Lucas Chacon. All rights reserved.',
-    'work-tag-1': 'Featured Project',
-    'work-title-1': 'BotFarma',
-    'work-desc-1': 'AI-powered pharmacy chatbot that streamlines consultation and management in the healthcare sector. RAG architecture, conversational engine, full-stack app, and cloud infrastructure.',
-    'work-tag-2': 'Featured Project',
-    'work-title-2': 'UFC Rivals',
-    'work-desc-2': 'Web platform for UFC fight analysis with AI simulation. Secure authentication, statistics, and interactive predictions.',
-    'work-tag-3': 'Featured Project',
-    'work-title-3': 'E-Commerce Sales Forecast',
-    'work-desc-3': 'Complete data science pipeline for predictive analysis of consumer behavior with over 540K records.',
-    'preview-default-title': 'Select a project',
-    'preview-default-desc': 'Hover over or click a project to view and pin its details.',
-    'preview-link-label': 'View project',
-  },
-};
+
 
 // ─── Contact Form ──────────────────────────────────────────
 function initContactForm() {
@@ -394,6 +340,7 @@ function initWorkPreview() {
   const previewLink = document.getElementById('preview-link');
   const previewImage = document.getElementById('preview-image');
   const previewImg = document.getElementById('preview-img');
+
 
   if (!items.length || !previewTitle) return;
 
@@ -434,10 +381,20 @@ function initWorkPreview() {
 
   let lockedItem = null;
 
+  workPreviewRefresh = () => {
+    if (lockedItem) previewItem(lockedItem);
+  };
+
   const previewItem = (item) => {
+    const lang = localStorage.getItem('lang') || 'es';
+    const t = (translations && (translations[lang] || translations.es)) || {};
+    const titleKey = item.dataset.previewTitleKey;
+    const descKey = item.dataset.previewDescKey;
+    const title = (titleKey && t[titleKey]) || item.dataset.previewTitle || '';
+    const desc = (descKey && t[descKey]) || item.dataset.previewDesc || '';
     showPreview(
-      item.dataset.previewTitle || '',
-      item.dataset.previewDesc || '',
+      title,
+      desc,
       item.dataset.previewTags || '',
       item.dataset.previewLink || '',
       item.dataset.previewImage || ''
@@ -460,6 +417,13 @@ function initWorkPreview() {
       previewItem(item);
     });
   });
+
+  // Auto-select first project on load
+  if (items.length > 0) {
+    lockedItem = items[0];
+    setActive(lockedItem);
+    previewItem(lockedItem);
+  }
 }
 
 // ─── Init ─────────────────────────────────────────────────
