@@ -331,7 +331,7 @@ function initContactForm() {
 
 // ─── Work Page Preview ─────────────────────────────────────
 function initWorkPreview() {
-  const items = document.querySelectorAll('.work-list-item');
+  const list = document.getElementById('work-list');
   const previewDefault = document.getElementById('preview-default');
   const previewContent = document.getElementById('preview-content');
   const previewTitle = document.getElementById('preview-title');
@@ -341,26 +341,29 @@ function initWorkPreview() {
   const previewImage = document.getElementById('preview-image');
   const previewImg = document.getElementById('preview-img');
 
+  if (!list || !previewTitle) return;
 
-  if (!items.length || !previewTitle) return;
+  const cursor = document.getElementById('cursor');
+  let lockedIndex = 0;
+  let items = [];
 
   const showDefault = () => {
     if (previewDefault) previewDefault.style.display = 'block';
     if (previewContent) previewContent.style.display = 'none';
   };
 
-  const showPreview = (title, desc, tags, link, image) => {
+  const showPreview = (work) => {
     if (previewDefault) previewDefault.style.display = 'none';
     if (previewContent) previewContent.style.display = 'block';
-    previewTitle.textContent = title;
-    previewDesc.textContent = desc;
+    previewTitle.textContent = work.title || '';
+    previewDesc.textContent = work.desc || '';
     if (previewTags) {
-      previewTags.innerHTML = tags.split(',').map(t => `<span>${t.trim()}</span>`).join('');
+      previewTags.innerHTML = (work.tags || []).map(tag => `<span>${tag}</span>`).join('');
     }
     if (previewImage && previewImg) {
-      if (image) {
-        previewImg.src = image;
-        previewImg.alt = title;
+      if (work.image) {
+        previewImg.src = `../public/img/${work.image}`;
+        previewImg.alt = work.title || '';
         previewImage.style.display = 'block';
       } else {
         previewImg.removeAttribute('src');
@@ -368,73 +371,78 @@ function initWorkPreview() {
       }
     }
     if (previewLink) {
-      if (link) {
+      if (work.link) {
         previewLink.style.display = 'inline-flex';
-        previewLink.href = link;
+        previewLink.href = work.link;
       } else {
         previewLink.style.display = 'none';
       }
     }
   };
 
-  showDefault();
-
-  let lockedItem = null;
-
-  workPreviewRefresh = () => {
-    if (lockedItem) previewItem(lockedItem);
+  const setActive = () => {
+    items.forEach((el, i) => el.classList.toggle('active', i === lockedIndex));
   };
 
-  const previewItem = (item) => {
+  function render() {
     const lang = localStorage.getItem('lang') || 'es';
     const t = (translations && (translations[lang] || translations.es)) || {};
-    const titleKey = item.dataset.previewTitleKey;
-    const descKey = item.dataset.previewDescKey;
-    const title = (titleKey && t[titleKey]) || item.dataset.previewTitle || '';
-    const desc = (descKey && t[descKey]) || item.dataset.previewDesc || '';
-    showPreview(
-      title,
-      desc,
-      item.dataset.previewTags || '',
-      item.dataset.previewLink || '',
-      item.dataset.previewImage || ''
-    );
-  };
+    const works = Array.isArray(t.works) ? t.works : [];
 
-  const setActive = (item) => {
-    items.forEach(el => el.classList.toggle('active', el === item));
-  };
+    list.innerHTML = works.map(() => `
+      <div class="work-list-item">
+        <span class="work-num"></span>
+        <h3></h3>
+        <p></p>
+      </div>
+    `).join('');
 
-  items.forEach(item => {
-    item.addEventListener('mouseenter', () => previewItem(item));
-    item.addEventListener('mouseleave', () => {
-      if (lockedItem) previewItem(lockedItem);
-      else showDefault();
+    items = Array.from(list.querySelectorAll('.work-list-item'));
+    items.forEach((item, i) => {
+      const work = works[i];
+      item.querySelector('.work-num').textContent = String(i + 1).padStart(2, '0');
+      item.querySelector('h3').textContent = work.title || '';
+      item.querySelector('p').textContent = work.desc || '';
+
+      if (cursor) {
+        item.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+        item.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+      }
+
+      item.addEventListener('mouseenter', () => showPreview(work));
+      item.addEventListener('mouseleave', () => {
+        if (items[lockedIndex]) showPreview(works[lockedIndex]);
+        else showDefault();
+      });
+      item.addEventListener('click', () => {
+        lockedIndex = i;
+        setActive();
+        showPreview(work);
+      });
     });
-    item.addEventListener('click', () => {
-      lockedItem = item;
-      setActive(item);
-      previewItem(item);
-    });
-  });
 
-  // Auto-select first project on load
-  if (items.length > 0) {
-    lockedItem = items[0];
-    setActive(lockedItem);
-    previewItem(lockedItem);
+    if (works.length) {
+      lockedIndex = Math.min(lockedIndex, works.length - 1);
+      setActive();
+      showPreview(works[lockedIndex]);
+    } else {
+      showDefault();
+    }
   }
+
+  workPreviewRefresh = render;
+  render();
 }
 
 // ─── Init ─────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   document.body.style.overflow = 'hidden';
   initLoader();
   if (!('ontouchstart' in window)) initCursor();
   init3D();
   initMenu();
   initTheme();
-  initLanguage();
+  await initLanguage();
   initContactForm();
   initWorkPreview();
 

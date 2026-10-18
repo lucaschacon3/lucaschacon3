@@ -11,21 +11,17 @@
 
 ## 💻 Stack Tecnológico
 
-• **Backend:** Python (FastAPI), Java (Spring Boot), APIs REST.
+- **Backend y APIs:** Python (FastAPI), Java (Spring Boot), APIs REST.
 
-• **Frontend:** JavaScript, React, Tailwind CSS, HTML5/CSS3.
+- **Frontend:** JavaScript, React, Tailwind CSS, HTML5/CSS3.
 
-• **BBDD y Almacenamiento:** PostgreSQL (pgvector), MySQL, MongoDB, Blob Storage.
+- **Inteligencia Artificial:** IA Generativa, Machine Learning, LLMs, RAG.
 
-• **Datos y ML:** Pandas, Scikit-learn, LightGBM, XGBoost, Power BI.
+- **Cloud y DevOps:** Azure, AWS, VPS, Docker, Git, entornos Linux.
 
-• **Inteligencia Artificial:** LLMs, RAG, Agentes de IA, pipelines ETL.
+- **Datos:** Pipelines ETL, PostgreSQL (pgvector), MySQL, MongoDB.
 
-• **Cloud:** Azure (OpenAI, AI Search, Functions, Blob Storage, Application Insights), AWS (Bedrock, EC2).
-
-• **DevOps:** Git, Docker, VPS, Linux.
-
-• **Automatización:** n8n, Power Platform (Power Automate, Copilot Studio).
+- **Automatización y Orquestación:** n8n, Power Platform (Power Automate, Copilot Studio).
 
 
 ## 🌐 Conecta Conmigo
