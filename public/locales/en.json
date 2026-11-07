@@ -1,7 +1,7 @@
 {
   "hero-title": "LUCAS",
   "hero-title-accent": "CHACON",
-  "hero-subtitle": "Software & AI Engineer",
+  "hero-subtitle": "Software & AI Developer",
   "hero-desc": "I build scalable software and automations that streamline processes.",
   "hero-cta": "View Work",
   "menu-home": "Home",
@@ -11,7 +11,7 @@
   "about-title": "About Me",
   "about-number": "02",
   "about-desc": "Specialized in generative AI, RAG and data engineering.",
-  "about-intro": "Software & AI Engineer specialized in RAG architectures, generative AI, data engineering and automation.",
+  "about-intro": "Software & AI Developer specialized in RAG architectures, generative AI, data engineering and automation.",
   "about-stack-title": "My Stack",
   "about-cv": "Download CV",
   "work-title": "Work",
